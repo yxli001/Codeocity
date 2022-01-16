@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home-page/Home";
 import Navbar from "./components/navbar/Navbar";
 
+// Yixuan: forms, second page, home page
+// Brian: navbar, courses, and meet the team
+
 function App() {
   return (
     <Router>
@@ -9,9 +12,7 @@ function App() {
         <Navbar />
       </div>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Routes>{/* <Route path="/" element={<Home />} /> */}</Routes>
     </Router>
   );
 }

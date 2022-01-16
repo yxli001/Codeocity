@@ -1,13 +1,16 @@
 import React from "react";
 import Navitem from "./Navitem";
+import NavLogo from "./NavLogo";
+import "./Navbar.css";
+import navAnimationHandler from "./NavAnimationHandler";
 
 export const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <div className="logo">
-        <Navitem url="/" name="Dream To Build" />
+        <NavLogo url="/" name="Codeocity" />{" "}
       </div>
-      <ul>
+      <ul className="nav-links">
         <li>
           <Navitem url="/" name="Home" />
         </li>
@@ -23,10 +26,12 @@ export const Navbar = () => {
         <li>
           <Navitem url="/contactus" name="Contact Us" />
         </li>
-        <li>
-          <Navitem url="/donations" name="Donations" />
-        </li>
       </ul>
+      <div className="burger" onClick={navAnimationHandler}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
     </nav>
   );
 };
