@@ -10,16 +10,17 @@
 
 .title {
   width: 100%;
+  font-size: 2rem;
 }
 
 .course-image {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 2%;
 }
 
 .course-text {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -32,7 +33,7 @@
 
 @media screen and (max-width: 1000px) {
   .course-wrapper {
-    width: 90%;
+    width: 80%;
   }
   .course-image {
     width: 75%;
