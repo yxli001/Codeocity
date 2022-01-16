@@ -1,0 +1,23 @@
+.title-container {
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    font-size: 2rem;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards;
+
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 99%;
+    }
+}
