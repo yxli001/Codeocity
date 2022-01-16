@@ -5,8 +5,16 @@
     margin-top: 5rem;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .typed-out-container {
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
 .typed-out {
