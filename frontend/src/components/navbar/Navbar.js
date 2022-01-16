@@ -11,19 +11,19 @@ export const Navbar = () => {
         <NavLogo url="/" name="Codeocity" />{" "}
       </div>
       <ul className="nav-links">
-        <li>
+        <li className="link">
           <Navitem url="/" name="Home" />
         </li>
-        <li>
+        <li className="link">
           <Navitem url="/mission" name="Mission" />
         </li>
-        <li>
+        <li className="link">
           <Navitem url="/courses" name="Courses" />
         </li>
-        <li>
+        <li className="link">
           <Navitem url="/volunteer" name="Volunteer" />
         </li>
-        <li>
+        <li className="link">
           <Navitem url="/contactus" name="Contact Us" />
         </li>
       </ul>

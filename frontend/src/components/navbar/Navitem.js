@@ -7,7 +7,7 @@ export const Navitem = (props) => {
   return (
     <div className="nav-item-container">
       <Link to={url} className="nav-item">
-        <h4>{name}</h4>
+        <h4 class="link">{name}</h4>
       </Link>
     </div>
   );

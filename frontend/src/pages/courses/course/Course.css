@@ -1,0 +1,43 @@
+.course-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding: 1%;
+  border-radius: 15px;
+}
+
+.title {
+  width: 100%;
+}
+
+.course-image {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.course-text {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.course-button {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .course-wrapper {
+    width: 90%;
+  }
+  .course-image {
+    width: 75%;
+  }
+  .course-text {
+    width: 100%;
+  }
+}

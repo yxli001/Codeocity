@@ -1,0 +1,11 @@
+.banner {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+#text {
+  width: 50%;
+  margin: 0 auto;
+}
