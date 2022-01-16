@@ -7,7 +7,6 @@ export const CoursesDisplay = () => {
     <div className="container">
       <Course />
       <Course />
-      <Course />
     </div>
   );
 };
