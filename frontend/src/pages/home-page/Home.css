@@ -1,0 +1,36 @@
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.typed-out-container {
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 0.15rem solid orange;
+    white-space: nowrap;
+    font-size: 3rem;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards;
+
+    margin: 0 auto;
+}
+
+.person-image {
+    display: inline-block;
+    margin-left: 5rem;
+    width: 26vw;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
