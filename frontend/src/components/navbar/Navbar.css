@@ -18,7 +18,7 @@
 }
 
 .logo {
-  color: black;
+  color: rgb(101, 202, 115);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px;
@@ -38,6 +38,9 @@
   text-decoration: none;
   color: black;
   letter-spacing: 2px;
+}
+.nav-item:hover {
+  color: rgb(101, 202, 115);
 }
 
 .burger div {
@@ -93,9 +96,9 @@
   transform: translateX(0%);
 }
 
-.link:hover {
+/* .link:hover {
   opacity: 60%;
-}
+} */
 
 @keyframes navLinkFade {
   from {

@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5%;
-  padding: 1%;
   border-radius: 15px;
+  background-color: white;
+  padding: 2%;
 }
 
 .title {
@@ -25,15 +25,22 @@
 }
 
 .course-button {
-  width: 25%;
+  background-color: rgb(101, 202, 115);
+  box-shadow: -1px 1px rgba(45.75, 129.75, 57, 0.6);
+  color: white;
+  border: none;
   margin: 0 auto;
   margin-top: 2%;
-  padding: 5px;
+  padding: 16px 24px 16px 24px;
+}
+.course-button:hover {
+  background-color: rgb(61, 173, 76);
 }
 
 @media screen and (max-width: 1000px) {
   .course-wrapper {
     width: 80%;
+    margin-bottom: 4%;
   }
   .course-image {
     width: 75%;

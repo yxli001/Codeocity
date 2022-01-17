@@ -4,6 +4,9 @@
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgb(61, 173, 76);
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 @media screen and (max-width: 1000px) {
