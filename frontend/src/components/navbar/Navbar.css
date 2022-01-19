@@ -99,6 +99,17 @@
   }
 }
 
+@keyframes navLinkDisappear {
+  from {
+    opacity: 1;
+    transform: translateX(75px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+}
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

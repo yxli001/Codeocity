@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../../../components/banner/Banner";
 import "./Courses.css";
 import { CoursesDisplay } from "../course-display/CoursesDisplay";
 
