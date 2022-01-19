@@ -1,59 +1,59 @@
 .banner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5rem; */
 }
 
 .title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .typed-out-container {
-    display: inline-block;
-    margin-bottom: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .typed-out {
-    overflow: hidden;
-    border-right: 0.15rem solid orange;
-    white-space: nowrap;
-    font-size: 3rem;
-    width: 0;
-    animation: typing 1s steps(20, end) forwards;
+  overflow: hidden;
+  border-right: 0.15rem solid orange;
+  white-space: nowrap;
+  font-size: 3rem;
+  width: 0;
+  animation: typing 1s steps(20, end) forwards;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .person-image {
-    display: inline-block;
-    margin-left: 7rem;
-    width: 25%;
+  display: inline-block;
+  margin-left: 7rem;
+  width: 25%;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .banner-container {
-        flex-direction: column;
-    }
+  .banner-container {
+    flex-direction: column;
+  }
 
-    .typed-out-container {
-        margin-bottom: 12.5rem;
-        transform: translateY(10rem);
-    }
+  .typed-out-container {
+    margin-bottom: 12.5rem;
+    transform: translateY(10rem);
+  }
 
-    /* .title-container {
+  /* .title-container {
         height: 82.5vh;
         justify-content: center;
     }
@@ -63,11 +63,11 @@
         margin-bottom: -5rem;
     } */
 
-    .person-image {
-        /* position: relative;
+  .person-image {
+    /* position: relative;
         left: 0.5rem;
         margin-left: 0;
         width: 80vw; */
-        display: none;
-    }
+    display: none;
+  }
 }

@@ -8,19 +8,18 @@ import Mission from "./pages/mission/Mission";
 // Brian: navbar, courses, and meet the team
 
 function App() {
-    return (
-        <Router>
-            <div className="navbar">
-                <Navbar />
-            </div>
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/courses" element={<Courses />} />
-                <Route path="/mission" element={<Mission />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/mission" element={<Mission />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
