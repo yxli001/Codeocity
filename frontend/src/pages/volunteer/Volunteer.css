@@ -1,0 +1,117 @@
+.form-container {
+    padding: 3rem 20rem;
+    display: flex;
+}
+
+.signup-image {
+    width: 45%;
+    margin-top: 0;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.form-title {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.form-description {
+    color: #a9a9a9;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: none;
+}
+
+#firstName,
+#lastName,
+#email,
+#skills {
+    outline: none;
+    padding: 3rem 1.4rem;
+    background: #eef5f3;
+    border: none;
+    color: #616161;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: #8f8f8f;
+}
+
+#firstName {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#skills {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#email {
+    margin-top: 0;
+    border-radius: none;
+}
+
+#phone {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.signup-submit {
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    background-color: rgb(101, 202, 115);
+    margin-top: 3rem;
+    padding: 1rem 0.3rem;
+    border-radius: 5px;
+}
+
+.signup-submit:hover {
+    cursor: pointer;
+    background-color: rgb(61, 173, 76);
+}
+
+@media only screen and (max-width: 1600px) {
+    .form-container {
+        padding: 3rem 13rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .signup-image {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .form-container {
+        padding: 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .form-container {
+        padding: 3rem 2rem;
+    }
+
+    #firstName,
+    #lastName,
+    #email,
+    #skills {
+        padding: 2rem 1.4rem;
+    }
+}
