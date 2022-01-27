@@ -1,0 +1,33 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 2%;
+  background-color: #252926;
+  color: white;
+  width: 100%;
+  padding-left: 5%;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  border-left: 3px solid rgb(61, 173, 76);
+}
+
+.custom-nav-item-footer {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-us-footer {
+  background-color: transparent;
+  border: 1px solid rgb(101, 202, 115);
+  color: rgb(101, 202, 115);
+  padding: 10px 25px 10px 25px;
+}
+.contact-us-footer:hover {
+  background-color: rgb(27, 73, 33);
+}
