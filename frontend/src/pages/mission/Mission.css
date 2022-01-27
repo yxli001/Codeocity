@@ -1,105 +1,106 @@
 .mission-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 25rem;
+  margin-top: 2%;
 }
 
 .top,
 .bottom {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .top {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .bottom {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .mission-text-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mission-text-title {
-    font-weight: 400;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    /* border-left: 5px solid rgb(61, 173, 76);
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  /* border-left: 5px solid rgb(61, 173, 76);
     background-color: rgb(101, 202, 115);
     color: white; */
 }
 
 .mission-text-description {
-    font-size: 1rem;
-    line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
 .mission-image {
-    position: relative;
-    width: 40%;
-    transition: transform 0.3s ease-out;
-    object-fit: cover;
-    border: 3px solid rgb(61, 173, 76);
-    border-image: linear-gradient(45deg, rgb(61, 173, 76), rgb(101, 202, 115)) 1;
+  position: relative;
+  width: 40%;
+  transition: transform 0.3s ease-out;
+  object-fit: cover;
+  border: 3px solid rgb(61, 173, 76);
+  border-image: linear-gradient(45deg, rgb(61, 173, 76), rgb(101, 202, 115)) 1;
 }
 
 .mission-image:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .mission-image:first-of-type {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .mission-image:last-of-type {
-    margin-right: 3rem;
+  margin-right: 3rem;
 }
 
 @media only screen and (max-width: 1800px) {
-    .mission-container {
-        padding: 3rem 15rem;
-    }
+  .mission-container {
+    padding: 3rem 15rem;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    .mission-container {
-        padding: 3rem 10rem;
-    }
+  .mission-container {
+    padding: 3rem 10rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .mission-container {
-        padding: 3rem 5rem;
-    }
+  .mission-container {
+    padding: 3rem 5rem;
+  }
 
-    .mission-text-description {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
+  .mission-text-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .mission-container {
-        padding: 3rem 1.2rem;
-    }
+  .mission-container {
+    padding: 3rem 1.2rem;
+  }
 
-    .top,
-    .bottom {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    .mission-text-description {
-        margin-left: 0.6rem;
-    }
+  .mission-text-description {
+    margin-left: 0.6rem;
+  }
 
-    .mission-image {
-        width: 100%;
-    }
+  .mission-image {
+    width: 100%;
+  }
 }

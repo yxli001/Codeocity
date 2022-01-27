@@ -6,6 +6,8 @@
   min-height: 8vh;
   width: 100%;
   background-color: white;
+  position: sticky;
+  top: 0;
 }
 
 .logo {

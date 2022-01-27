@@ -9,14 +9,11 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo" onClick={hideNavbar}>
-        <NavLogo url="/" name="Codeocity" />{" "}
+        <NavLogo url="/" name="Codeocity" />
       </div>
       <ul className="nav-links">
         <li className="link" onClick={hideNavbar}>
           <Navitem url="/" name="Home" />
-        </li>
-        <li className="link" onClick={hideNavbar}>
-          <Navitem url="/mission" name="Mission" onClick={hideNavbar} />
         </li>
         <li className="link" onClick={hideNavbar}>
           <Navitem url="/courses" name="Courses" />

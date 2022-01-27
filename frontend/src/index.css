@@ -11,11 +11,15 @@ body {
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   /* position: relative; */
 }
 
 .overflow {
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.move-away-top {
+  margin-top: 2%;
 }
