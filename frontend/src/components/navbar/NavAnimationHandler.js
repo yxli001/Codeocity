@@ -15,8 +15,8 @@ const navAnimationHandler = () => {
       }s`;
     }
     //Burger animation
-    burger.classList.toggle("toggle");
   });
+  burger.classList.toggle("toggle");
 };
 
 export default navAnimationHandler;

@@ -22,7 +22,7 @@ export const Navbar = () => {
           <Navitem url="/volunteer" name="Volunteer" />
         </li>
         <li className="link" onClick={hideNavbar}>
-          <Navitem url="/contactus" name="Contact Us" />
+          <Navitem url="/contact-us" name="Contact Us" />
         </li>
       </ul>
       <div className="burger" onClick={navAnimationHandler}>

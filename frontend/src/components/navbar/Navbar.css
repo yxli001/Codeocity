@@ -6,8 +6,6 @@
   min-height: 8vh;
   width: 100%;
   background-color: white;
-  position: sticky;
-  top: 0;
 }
 
 .logo {
@@ -60,7 +58,7 @@
     width: 100%;
     right: 0px;
     height: 55%;
-    top: 6.9vh;
+    top: 6.6vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
