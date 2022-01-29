@@ -1,24 +1,54 @@
 .footer-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 2%;
   background-color: #252926;
   color: white;
   width: 100%;
   padding-left: 5%;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 2%;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
+  justify-content: space-around;
+  padding-left: 2%;
   border-left: 3px solid rgb(61, 173, 76);
+}
+
+.section-3 {
+  margin-top: 5%;
+}
+
+.feedback-form {
+  margin-top: 5px;
+  border: none;
+  width: 40%;
+  padding: 5px;
+  outline: none;
+}
+
+.feedback-form-submit {
+  padding: 5px;
+  border: none;
+  background-color: rgb(101, 202, 115);
+}
+
+.footer-icon {
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .custom-nav-item-footer {
   color: white;
+  text-decoration: none;
+}
+
+.custom-nav-item-footer:hover {
+  color: rgb(101, 202, 115);
   text-decoration: none;
 }
 
@@ -30,4 +60,18 @@
 }
 .contact-us-footer:hover {
   background-color: rgb(27, 73, 33);
+}
+
+@media screen and (max-width: 815px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: none;
+  }
 }

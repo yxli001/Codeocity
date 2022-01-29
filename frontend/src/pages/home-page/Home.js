@@ -1,7 +1,6 @@
 import React from "react";
 import person from "../../images/person.png";
 import ExploreButton from "../../components/ExploreButton/ExploreButton";
-import { Footer } from "../footer/Footer";
 import Mission from "../mission/Mission";
 import { MeetTheTeam } from "../meet-the-team/MeetTheTeam";
 
@@ -21,7 +20,6 @@ export const Home = () => {
       </div>
       <Mission />
       <MeetTheTeam />
-      <Footer />
     </div>
   );
 };
