@@ -24,7 +24,7 @@ export const Footer = () => {
       </div>
 
       <div className="section-3">
-        <label>Have feedback on the website? We'd love to hear!</label>
+        <label>Have feedback for the website? We'd love to hear!</label>
         <form>
           <input
             type="text"

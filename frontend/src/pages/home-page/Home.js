@@ -3,6 +3,7 @@ import person from "../../images/person.png";
 import ExploreButton from "../../components/ExploreButton/ExploreButton";
 import Mission from "../mission/Mission";
 import { MeetTheTeam } from "../meet-the-team/MeetTheTeam";
+import employees from "../../data/Employees";
 
 import "./Home.css";
 
@@ -19,7 +20,7 @@ export const Home = () => {
         <img src={person} alt="person" className="person-image" />
       </div>
       <Mission />
-      <MeetTheTeam />
+      <MeetTheTeam employees={employees} />
     </div>
   );
 };

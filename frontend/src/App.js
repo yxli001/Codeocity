@@ -5,6 +5,8 @@ import Courses from "./pages/courses/course-wrapper/Courses";
 import Volunteer from "./pages/volunteer/Volunteer";
 import { MeetTheTeam } from "./pages/meet-the-team/MeetTheTeam";
 import { Footer } from "./pages/footer/Footer";
+import employees from "./data/Employees";
+
 // Yixuan: forms, second page, home page
 // Brian: navbar, courses, and meet the team
 
@@ -14,11 +16,9 @@ function App() {
       <div className="navbar">
         <Navbar />
       </div>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/meettheteam" element={<MeetTheTeam />} />
         <Route path="/volunteer" element={<Volunteer />} />
       </Routes>
       <Footer />
