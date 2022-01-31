@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #f8f8f8;
 }
 
 .title-container {
@@ -46,18 +48,27 @@
 @media only screen and (max-width: 900px) {
     .banner-container {
         flex-direction: column;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        background-image: url("../../images/girl_with_better_computer.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    .white-filter {
+        padding: 3rem;
+        background: rgba(255, 255, 255, 0.8);
+        width: fit-content;
     }
 
     .typed-out-container {
-        margin-bottom: 12.5rem;
-        transform: translateY(10rem);
+        /* margin-bottom: 12.5rem; */
+        /* transform: translateY(5rem); */
+        height: 100%;
     }
 
     .person-image {
-        /* position: relative;
-        left: 0.5rem;
-        margin-left: 0;
-        width: 80vw; */
         display: none;
     }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import axios from "axios";
 
-import "./Volunteer.css";
+import "./Jobs.css";
 import signup from "../../images/signup.jpeg";
 
 const Volunteer = () => {
@@ -19,7 +20,7 @@ const Volunteer = () => {
         });
     };
 
-    const onSubmitHandler = (e) => {
+    const onSubmitHandler = async (e) => {
         e.preventDefault();
 
         setState({
@@ -28,13 +29,27 @@ const Volunteer = () => {
             email: "",
             skills: "",
         });
+
+        await axios({
+            method: "post",
+            url: "http://localhost:5000/volunteer",
+            data: {
+                firstName: state.firstName,
+                lastName: state.lastName,
+                email: state.email,
+                skills: state.skills,
+            },
+            headers: {
+                "content-type": "application/json",
+            },
+        });
     };
 
     return (
         <div className="form-container">
-            <img src={signup} alt="Sign up" className="signup-image" />
+            <img src={signup} alt="Apply" className="signup-image" />
             <form className="form">
-                <h2 className="form-title">Sign Up</h2>
+                <h2 className="form-title">Apply</h2>
                 <h3 className="form-description">
                     Want to help people learn to code? Sign up as a teacher.
                 </h3>

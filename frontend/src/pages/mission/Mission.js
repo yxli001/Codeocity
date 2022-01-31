@@ -44,7 +44,11 @@ const Mission = () => {
                             egestas, porttitor fermentum tellus pulvinar.
                         </p>
                     </div>
-                    <img className="mission-image" src={dreamBig} alt="" />
+                    <img
+                        className="mission-image second-image"
+                        src={dreamBig}
+                        alt=""
+                    />
                 </div>
             </div>
         </div>
