@@ -39,7 +39,7 @@ export const MeetTheTeam = (props) => {
                                 key={index}
                                 name={employee.name}
                                 image={employee.image}
-                                role={employee.role}
+                                roles={employee.roles}
                                 description={employee.description}
                                 classesProp={
                                     index === current ? "slide active" : "slide"

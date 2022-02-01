@@ -1,51 +1,55 @@
 .course-wrapper {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 15px;
-  background-color: white;
-  padding: 2%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: white;
+    padding: 2%;
 }
 
 .title {
-  width: 100%;
-  font-size: 2rem;
+    width: 100%;
+    font-size: 2rem;
 }
 
 .course-image {
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 2%;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 .course-text {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .course-button {
-  background-color: rgb(101, 202, 115);
-  box-shadow: -1px 1px rgba(45.75, 129.75, 57, 0.6);
-  color: white;
-  border: none;
-  margin: 0 auto;
-  margin-top: 2%;
-  padding: 16px 24px 16px 24px;
+    background-color: rgb(101, 202, 115);
+    box-shadow: -1px 1px rgba(45.75, 129.75, 57, 0.6);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 16px 24px 16px 24px;
+    text-decoration: none;
 }
+
 .course-button:hover {
-  background-color: rgb(61, 173, 76);
+    background-color: rgb(61, 173, 76);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
-  .course-wrapper {
-    width: 80%;
-    margin-bottom: 4%;
-  }
-  .course-image {
-    width: 75%;
-  }
-  .course-text {
-    width: 100%;
-  }
+    .course-wrapper {
+        width: 80%;
+        margin-bottom: 4%;
+    }
+    .course-image {
+        width: 75%;
+    }
+    .course-text {
+        width: 100%;
+    }
 }

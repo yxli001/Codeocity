@@ -51,8 +51,11 @@ const Volunteer = () => {
             <form className="form">
                 <h2 className="form-title">Apply</h2>
                 <h3 className="form-description">
-                    Want to help people learn to code? Sign up as a teacher.
+                    Want to help people learn to code? Sign up as a teacher.{" "}
+                    <hr className="hr-jobs" />
+                    Hours are flexible. Minimum 2 hours per week. $15/hour
                 </h3>
+                <h3 className="form-description"></h3>
                 <input
                     type="text"
                     name="firstName"

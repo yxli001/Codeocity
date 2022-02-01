@@ -30,7 +30,12 @@
     margin-top: none;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.5rem;
 }
+
+/* .form-description:nth-last-of-type() {
+    margin: 0;
+} */
 
 #firstName,
 #lastName,
@@ -81,6 +86,11 @@
 .signup-submit:hover {
     cursor: pointer;
     background-color: rgb(61, 173, 76);
+}
+
+.hr-jobs {
+    width: 100%;
+    border: 0.5px solid #e7e7e7;
 }
 
 @media only screen and (max-width: 1600px) {

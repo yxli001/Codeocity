@@ -4,14 +4,14 @@ const employees = [
     {
         id: "1",
         name: "Brian Mason",
-        role: "Co-founder, TBD",
+        roles: ["Co-founder", "TBD"],
         description: "TBD",
         image: person,
     },
     {
         id: "2",
         name: "Yixuan Li",
-        role: "Co-founder, TBD",
+        roles: ["Co-founder", "TBD"],
         description: "TBD",
         image: person,
     },

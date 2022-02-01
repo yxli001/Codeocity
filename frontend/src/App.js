@@ -7,6 +7,7 @@ import { MeetTheTeam } from "./pages/meet-the-team/MeetTheTeam";
 import { Footer } from "./pages/footer/Footer";
 import employees from "./data/Employees";
 import ContactUs from "./pages/contact-us/ContactUs";
+import { Course } from "./pages/courses/learn-more/Course";
 
 // Yixuan: forms, second page, home page
 // Brian: navbar, courses, and meet the team
@@ -20,6 +21,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
+                <Route path="/course" element={<Course />} />
                 <Route path="/apply" element={<Jobs />} />
                 <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
