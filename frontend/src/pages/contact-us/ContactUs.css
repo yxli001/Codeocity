@@ -1,0 +1,15 @@
+#name,
+#email,
+#message {
+    outline: none;
+    padding: 3rem 1.4rem;
+    background: #eef5f3;
+    border: none;
+    color: #616161;
+    font-size: 1rem;
+}
+
+#message {
+    font-family: inherit;
+    resize: vertical;
+}

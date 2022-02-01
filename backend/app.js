@@ -75,6 +75,28 @@ app.post("/feedback", (req, res) => {
     });
 });
 
+app.post("/contact-us", (req, res) => {
+    const { name, email, message } = req.body;
+
+    let mailOptions = {
+        from: "codeocityorg@gmail.com",
+        to: "codeocityorg@gmail.com",
+        subject: "User Message",
+        html: `<h1 style="font-size:20px;font-weight:600;">Name: ${name}</h1>
+                <h1 style="font-size:20px;font-weight:600;">Email: ${email}</h1>
+                <h1 style="font-size:20px;font-weight:600;">Message: ${message}</h1>
+                <p style="font-size:20px;font-weight:300;">Time: ${new Date().toLocaleString()}</p>`,
+    };
+
+    transporter.sendMail(mailOptions, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Email sent successfully");
+        }
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Server runnign on port ${PORT}`);
 });
