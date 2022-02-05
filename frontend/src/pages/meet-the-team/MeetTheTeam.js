@@ -21,7 +21,7 @@ export const MeetTheTeam = (props) => {
 
     return (
         <div className="main-container-team">
-            <h1 className="force-center-text">Meet the Team</h1>
+            <h1 className="force-center-text">{props.title}</h1>
             <div className="container-meet-team">
                 {/* Display one at a time. Keep control over this using JS - use state. When changed change state which corresponds to profile*/}
                 <div className="carousel-container">

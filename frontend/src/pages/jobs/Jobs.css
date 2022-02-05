@@ -1,6 +1,7 @@
 .form-container {
     padding: 3rem 20rem;
     display: flex;
+    text-align: center;
 }
 
 .signup-image {
@@ -47,6 +48,15 @@
     border: none;
     color: #616161;
     font-size: 1rem;
+}
+
+#name:focus,
+#message:focus,
+#firstName:focus,
+#lastName:focus,
+#email:focus,
+#skills:focus {
+    border: 1px solid rgb(61, 173, 76);
 }
 
 ::placeholder {

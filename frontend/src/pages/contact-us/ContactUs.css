@@ -9,6 +9,16 @@
     font-size: 1rem;
 }
 
+#name {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#message {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 #message {
     font-family: inherit;
     resize: vertical;

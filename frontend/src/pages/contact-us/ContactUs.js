@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import axios from "axios";
+import validator from "validator";
+import { Alert } from "../../components/alerts/Alert";
 
 import "./ContactUs.css";
 import contactUs from "../../images/contact-us.jpg";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
     const [state, setState] = useState({
         name: "",
         email: "",
         message: "",
     });
+
+    const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [warning, setWarning] = useState(false);
 
     const onChangeHandler = (e) => {
         const value = e.target.value;
@@ -22,24 +28,50 @@ const ContactUs = () => {
     const onSubmitHandler = async (e) => {
         e.preventDefault();
 
+        if (state.name === "") {
+            setWarning(true);
+            return;
+        }
+
+        if (state.message === "") {
+            setWarning(true);
+            return;
+        }
+
+        if (state.email === "" || !validator.isEmail(state.email)) {
+            setWarning(true);
+            return;
+        }
+
         setState({
             name: "",
             email: "",
             message: "",
         });
 
-        await axios({
-            method: "post",
-            url: "http://localhost:5000/contact-us",
-            data: {
-                name: state.name,
-                email: state.email,
-                message: state.message,
-            },
-            headers: {
-                "content-type": "application/json",
-            },
-        });
+        try {
+            setWarning(false);
+            setError(false);
+            setSuccess(true);
+
+            await axios({
+                method: "post",
+                url: "http://localhost:5000/contact-us",
+                data: {
+                    name: state.name,
+                    email: state.email,
+                    message: state.message,
+                },
+                headers: {
+                    "content-type": "application/json",
+                },
+            });
+        } catch (error) {
+            console.log(error);
+            setWarning(false);
+            setSuccess(false);
+            setError(true);
+        }
     };
 
     return (
@@ -50,6 +82,27 @@ const ContactUs = () => {
                 <h3 className="form-description">
                     Reach out to us with this quick form
                 </h3>
+                {warning && (
+                    <Alert
+                        type="warning"
+                        editState={setWarning}
+                        text="Please make sure you filled in all fields of the form and a valid email address before submitting. "
+                    />
+                )}
+                {success && (
+                    <Alert
+                        type="success"
+                        editState={setSuccess}
+                        text="Application sent successfully! We will get back to you within a few days."
+                    />
+                )}
+                {error && (
+                    <Alert
+                        type="error"
+                        editState={setError}
+                        text="There was an error sending your application, please try again later. "
+                    />
+                )}
                 <input
                     type="text"
                     name="name"

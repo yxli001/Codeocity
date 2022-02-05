@@ -12,15 +12,19 @@
 .profile-container {
     width: 100%;
     padding: 2%;
+    display: flex !important;
+    justify-content: space-around;
 }
 
 .profile-data {
-    float: left;
+    overflow: hidden;
+    height: 100%;
+    width: 15rem;
 }
 
 .profile-image {
-    max-width: 50%;
-    float: right;
+    width: 50%;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 950px) {
@@ -39,11 +43,16 @@
 }
 
 .slide {
-    display: none;
-    animation: zoom 0.4s linear;
+    /* display: none; */
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
 }
-.slide.active {
+
+.active {
+    position: static;
     display: block;
+    animation: zoom 0.4s linear;
 }
 
 @keyframes zoom {
@@ -79,9 +88,15 @@
     }
     .profile-container {
         width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .profile-data {
+        width: 80%;
+        text-align: center;
     }
     .profile-image {
-        max-width: 100%;
+        width: 80%;
     }
     .left-arrow {
         left: -60px;
@@ -94,6 +109,6 @@
 .force-center-text {
     text-align: center;
     color: rgb(101, 202, 115);
-    padding-top: 3rem;
+    padding-top: 1rem;
     background-color: #f8f8f8;
 }

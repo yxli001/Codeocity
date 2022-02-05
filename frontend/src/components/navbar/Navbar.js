@@ -1,15 +1,15 @@
 import React from "react";
 import Navitem from "./Navitem";
-import NavLogo from "./NavLogo";
 import "./Navbar.css";
 import navAnimationHandler from "./NavAnimationHandler";
 import hideNavbar from "./HideNavbar";
+import hide from "./Hide";
 
 export const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="logo" onClick={hideNavbar}>
-                <NavLogo url="/" name="Codeocity" />
+            <div className="logo" onClick={hide}>
+                Codeocity
             </div>
             <ul className="nav-links">
                 <li className="link" onClick={hideNavbar}>

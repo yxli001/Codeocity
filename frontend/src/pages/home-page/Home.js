@@ -1,6 +1,4 @@
 import React from "react";
-import person from "../../images/person.png";
-import person2 from "../../images/person2.png";
 import girlWithComputer from "../../images/girl_with_better_computer.png";
 import ExploreButton from "../../components/ExploreButton/ExploreButton";
 import Mission from "../mission/Mission";
@@ -26,7 +24,7 @@ export const Home = () => {
                 />
             </div>
             <Mission />
-            <MeetTheTeam employees={employees} />
+            <MeetTheTeam employees={employees} title={"Meet The Team"} />
         </div>
     );
 };

@@ -3,7 +3,26 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 
+const helmet = require("helmet");
+const xss = require("xss-clean");
+const rateLimiter = require("express-rate-limit");
+
 const PORT = 5000 || process.env.PORT;
+
+// Middleware
+// Secures HTTP headers
+app.use(helmet());
+// Stops XSS attacks
+app.use(xss());
+app.use(express.urlencoded({ extended: false }));
+
+//Stops oversending to routes
+app.use(
+    rateLimiter({
+        windowMs: 15 * 60 * 1000, //15 min
+        max: 100,
+    })
+);
 
 let transporter = nodemailer.createTransport({
     service: "gmail",

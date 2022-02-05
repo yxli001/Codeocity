@@ -66,8 +66,8 @@ export const Footer = () => {
                 <Link to="/courses" className="custom-nav-item-footer">
                     <p>Courses</p>
                 </Link>
-                <Link to="/volunteer" className="custom-nav-item-footer">
-                    <p>Volunteer</p>
+                <Link to="/apply" className="custom-nav-item-footer">
+                    <p>Jobs</p>
                 </Link>
                 <Link to="/contact-us" className="custom-nav-item-footer">
                     <p>Contact Us</p>

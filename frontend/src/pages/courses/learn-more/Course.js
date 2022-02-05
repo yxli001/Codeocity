@@ -1,80 +1,64 @@
 import React from "react";
 import "./Course.css";
+import { MeetTheTeam } from "../../meet-the-team/MeetTheTeam";
+import ReactPlayer from "react-player/youtube";
 
 export const Course = (props) => {
     return (
         <div className="course-learn-more-wrapper">
             <div className="course-specific-banner">
-                <h1 className="course-specific-title">Title</h1>
-                <p className="course-specific-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+                <div className="course-specific-data-container">
+                    <h1 className="course-specific-title">{props.title}</h1>
+                    <p className="course-specific-description">
+                        {props.description}
+                        <br />
+                        <b style={{ fontWeight: "600" }}>
+                            Cost: ${props.price} - $25/hour
+                            <br />
+                            10 classes, twice a week.
+                        </b>
+                    </p>
+                </div>
+                <div className="video-container-learn-more">
+                    {/* <iframe
+                        width="560"
+                        height="315"
+                        src={props.video}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe> */}
+                    <ReactPlayer
+                        url={props.video}
+                        controls={true}
+                        width="100%"
+                        height="100%"
+                        style={{ margin: "1rem auto" }}
+                    />
+                </div>
             </div>
-            <div className="course-content-container-learn-more">
-                <h2 className="force-center-h2">What you'll learn</h2>
-                <ul className="course-content">
-                    <div>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                    </div>
-                    <div>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                        <li className="course-content-item">
-                            &#10003;&nbsp;&nbsp; Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore
-                        </li>
-                    </div>
-                </ul>
+            <div className="course-content-teachers-wrapper">
+                <div className="teachers-container">
+                    <MeetTheTeam
+                        employees={props.teachers}
+                        title="Meet Your Instructors"
+                    />
+                </div>
+                <div className="course-content-container-learn-more">
+                    <h2 className="what-you-learn">What you'll learn</h2>
+                    <ul className="course-content">
+                        {props.content.map((item, counter) => {
+                            return (
+                                <div key={counter}>
+                                    <li className="course-content-item">
+                                        &#10003;&nbsp;&nbsp; {item}
+                                    </li>
+                                </div>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,38 @@
+.alert-container-wrapper {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /* padding: 2%; */
+}
+
+.alert-success {
+    background-color: rgba(61, 191, 96, 0.6);
+    color: rgba(61, 191, 96, 0.7);
+}
+
+.alert-error {
+    background-color: rgba(224, 40, 40, 0.6);
+    color: rgba(224, 40, 40, 1);
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #85646e;
+}
+
+.x-wrapper {
+    margin-right: 2%;
+    width: 20%;
+}
+.x-wrapper:hover {
+    cursor: pointer;
+}
+
+.y-wrapper {
+    margin-left: 2%;
+    max-width: 70%;
+}

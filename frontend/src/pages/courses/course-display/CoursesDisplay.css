@@ -1,19 +1,20 @@
 .container {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(61, 173, 76);
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f8f8f8;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
