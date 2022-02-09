@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMehRollingEyes } from "react-icons/fa";
+// import { FaMehRollingEyes } from "react-icons/fa";
 import "./MeetTheTeam.css";
 
 export const Profile = (props) => {

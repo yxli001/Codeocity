@@ -61,32 +61,6 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom">
-                <div className="mission-text-container">
-                    <h2 className="mission-text-title">
-                        Turn dreams into reality
-                    </h2>
-                    <p className="mission-text-description">
-                        We are a team of dedicated highschool students that each
-                        have at least two years of coding experience. Getting
-                        into coding at a young age is the best time to start,
-                        but for many it is difficult to know where to begin and
-                        how to structure their learning. That’s where we come
-                        in. Our mission is to provide a primer into the coding
-                        world as well as to teach students to teach themselves.
-                        Each of our lessons will include homework that forces
-                        students to do some research on their own which will
-                        build on top of what they have learned in class. All of
-                        our classes will be held virtually to allow for more
-                        flexibility for both the students and teachers.
-                    </p>
-                </div>
-                <img
-                    className="mission-image second-image"
-                    src={dreamBig}
-                    alt=""
-                />
-            </div>
         </div>
     );
 };

@@ -3,9 +3,9 @@ import Home from "./pages/home-page/Home";
 import Navbar from "./components/navbar/Navbar";
 import Courses from "./pages/courses/course-wrapper/Courses";
 import Jobs from "./pages/jobs/Jobs";
-import { MeetTheTeam } from "./pages/meet-the-team/MeetTheTeam";
+// import { MeetTheTeam } from "./pages/meet-the-team/MeetTheTeam";
 import { Footer } from "./pages/footer/Footer";
-import employees from "./data/Employees";
+// import employees from "./data/Employees";
 import ContactUs from "./pages/contact-us/ContactUs";
 import CourseInfoWrapper from "./pages/courses/course-info-wrapper/CourseInfoWrapper";
 
