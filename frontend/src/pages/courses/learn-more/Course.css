@@ -1,29 +1,29 @@
 .course-learn-more-wrapper {
-    background-color: #f8f8f8;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .course-content-teachers-wrapper {
-    padding: 1rem 10rem;
-    display: grid;
-    grid-template-columns: 5.5fr 4.5fr;
+  padding: 1rem 10rem;
+  display: grid;
+  grid-template-columns: 5.5fr 4.5fr;
 }
 
 .course-content-container-learn-more {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid #d3d3d3;
-    text-indent: -1.5rem;
-    padding: 0.5rem;
-    padding-inline-start: 3rem;
-    padding-inline-end: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  text-indent: -1.5rem;
+  padding: 0.5rem;
+  padding-inline-start: 3rem;
+  padding-inline-end: 1.5rem;
 
-    margin: 2rem;
+  margin: 2rem;
 }
 
 /* .force-center-h2 {
@@ -31,102 +31,104 @@
 } */
 
 .course-specific-title {
-    color: rgb(101, 202, 115);
-    /* margin-top: 1.5rem; */
-    margin: 0;
-    margin-bottom: 0.5rem;
+  color: rgb(101, 202, 115);
+  /* margin-top: 1.5rem; */
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .video-container-learn-more {
-    width: 80%;
-    height: 25rem;
-    text-align: center;
+  width: 80%;
+  height: 25rem;
+  text-align: center;
 }
 
 .course-content {
-    display: grid;
-    list-style: none;
-    grid-template-columns: 1fr 1fr;
-    margin-block-start: 0rem;
-    margin-block-end: 0rem;
-    padding-inline-start: 0px;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  padding-inline-start: 0px;
 }
 
 .course-content-item {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .course-specific-banner {
-    width: 100%;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    padding-top: 3%;
-    padding-bottom: 4%;
-    padding-left: 10%;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  padding-left: 10%;
 
-    padding-right: 10%;
+  padding-right: 10%;
 }
 
 .course-specific-data-container {
-    text-align: center;
+  text-align: center;
 }
 
 .course-specific-description {
-    width: 100%;
-    margin: 0rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+  line-height: 200%;
 }
 
 .what-you-learn {
-    text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
-    .course-specific-banner {
-        grid-template-columns: 1fr;
-    }
+  .course-specific-banner {
+    grid-template-columns: 1fr;
+  }
 
-    .video-container-learn-more {
-        width: 60%;
-        margin: 0 auto;
-    }
+  .video-container-learn-more {
+    width: 60%;
+    margin: 0 auto;
+  }
 
-    .course-content-teachers-wrapper {
-        grid-template-columns: 1fr;
-        padding: 1rem 3rem;
-    }
+  .course-content-teachers-wrapper {
+    grid-template-columns: 1fr;
+    padding: 1rem 3rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .video-container-learn-more {
-        width: 80%;
-        margin: 0 auto;
-    }
+  .video-container-learn-more {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 815px) {
-    .main-container-team {
-        padding-bottom: 0;
-    }
+  .main-container-team {
+    padding-bottom: 0;
+  }
 
-    .course-content-teachers-wrapper {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    .course-content-container-learn-more {
-        padding: 0rem;
-        padding-inline-start: 1rem;
-        padding-inline-end: 0rem;
-        margin: none;
-    }
+  .course-content-teachers-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .course-content-container-learn-more {
+    padding: 0rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 0rem;
+    margin: none;
+  }
 
-    .force-center-text {
-        padding: none;
-    }
+  .force-center-text {
+    padding: none;
+  }
 
-    .video-container-learn-more {
-        width: 80%;
-        margin: 0 auto;
-        height: 20rem;
-    }
+  .video-container-learn-more {
+    width: 80%;
+    margin: 0 auto;
+    height: 20rem;
+  }
 }
