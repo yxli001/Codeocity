@@ -56,7 +56,7 @@ const ContactUs = (props) => {
 
             await axios({
                 method: "post",
-                url: "http://localhost:5000/contact-us",
+                url: "http://codeocityorg.herokuapp.com/contact-us",
                 data: {
                     name: state.name,
                     email: state.email,
@@ -80,7 +80,8 @@ const ContactUs = (props) => {
             <form className="form">
                 <h2 className="form-title">Contact Us</h2>
                 <h3 className="form-description">
-                    Reach out to us with this quick form
+                    Want to schedule a meeting or just ask a question? Reach out
+                    to us here!
                 </h3>
                 {warning && (
                     <Alert

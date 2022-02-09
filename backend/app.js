@@ -7,7 +7,7 @@ const helmet = require("helmet");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
 
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 // Secures HTTP headers
@@ -27,12 +27,8 @@ app.use(
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        type: "OAuth2",
         user: process.env.MAIL_USERNAME,
         pass: process.env.MAIL_PASSWORD,
-        clientId: process.env.OAUTH_CLIENT_ID,
-        clientSecret: process.env.OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
     },
 });
 
@@ -68,8 +64,10 @@ app.post("/volunteer", (req, res) => {
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {
             console.log("Error " + err);
+            return res.send("Error");
         } else {
             console.log("Email sent successfully");
+            return res.send("Email sent successfully");
         }
     });
 });
@@ -88,8 +86,10 @@ app.post("/feedback", (req, res) => {
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {
             console.log("Error " + err);
+            return res.send("Error");
         } else {
             console.log("Email sent successfully");
+            return res.send("Email sent successfully");
         }
     });
 });
@@ -110,10 +110,16 @@ app.post("/contact-us", (req, res) => {
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {
             console.log("Error " + err);
+            return res.send("Error");
         } else {
             console.log("Email sent successfully");
+            return res.send("Email sent successfully");
         }
     });
+});
+
+app.get("*", (req, res) => {
+    res.send("404 Not Found");
 });
 
 app.listen(PORT, () => {

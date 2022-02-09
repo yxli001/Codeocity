@@ -63,6 +63,14 @@
     background-color: rgb(27, 73, 33);
 }
 
+.social-links {
+    color: white;
+}
+
+.social-links:hover {
+    color: #e7e7e7;
+}
+
 @media screen and (max-width: 1250px) {
     .footer-container {
         display: grid;

@@ -66,7 +66,7 @@ const Volunteer = () => {
 
             await axios({
                 method: "post",
-                url: "http://localhost:5000/volunteer",
+                url: "http://codeocityorg.herokuapp.com/volunteer",
                 data: {
                     firstName: state.firstName,
                     lastName: state.lastName,
@@ -94,7 +94,8 @@ const Volunteer = () => {
                     <h3 className="form-description">
                         Want to help people learn to code? Sign up as a teacher.{" "}
                         <hr className="hr-jobs" />
-                        Times are flexible. Minimum 2 hours per week. $15/hour
+                        Times are flexible. Minimum 2 hours per week. Starting
+                        salary is $15/hour
                     </h3>
                     {warning && (
                         <Alert
@@ -117,7 +118,6 @@ const Volunteer = () => {
                             text="There was an error sending your application, please try again later. "
                         />
                     )}
-                    <h3 className="form-description"></h3>
                     <input
                         type="text"
                         name="firstName"

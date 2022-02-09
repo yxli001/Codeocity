@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import {} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
@@ -11,11 +11,11 @@ import "./Footer.css";
 
 export const Footer = () => {
     const [feedback, setFeedback] = useState("");
-    let navigate = useNavigate();
-    const routeChange = () => {
-        let path = "/contact-us";
-        navigate(path);
-    };
+    // let navigate = useNavigate();
+    // const routeChange = () => {
+    //     let path = "/contact-us";
+    //     navigate(path);
+    // };
 
     const feedbackFormSubmitHandler = async (e) => {
         e.preventDefault();
@@ -24,7 +24,7 @@ export const Footer = () => {
 
         await axios({
             method: "post",
-            url: "http://localhost:5000/feedback",
+            url: "http://codeocityorg.herokuapp.com/feedback",
             data: {
                 feedback,
             },
@@ -38,12 +38,36 @@ export const Footer = () => {
         <div className="footer-container">
             <div className="section-1">
                 <h2>Codeocity</h2>
-                <FontAwesomeIcon
-                    icon={faInstagramSquare}
-                    className="footer-icon"
-                />
-                <FontAwesomeIcon icon={faDiscord} className="footer-icon" />
-                <FontAwesomeIcon icon={faFacebook} className="footer-icon" />
+                <a
+                    href="https://www.instagram.com/codeocity/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-links"
+                >
+                    <FontAwesomeIcon
+                        icon={faInstagramSquare}
+                        className="footer-icon"
+                    />
+                </a>
+                <a
+                    href="https://discord.gg/uYrB642Cqz"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-links"
+                >
+                    <FontAwesomeIcon icon={faDiscord} className="footer-icon" />
+                </a>
+                <a
+                    href="https://www.facebook.com/codeocity"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-links"
+                >
+                    <FontAwesomeIcon
+                        icon={faFacebook}
+                        className="footer-icon"
+                    />
+                </a>
             </div>
 
             <div className="section-3">
