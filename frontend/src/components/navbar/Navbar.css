@@ -32,9 +32,6 @@
     color: black;
     letter-spacing: 2px;
 }
-.nav-item:hover {
-    color: rgb(101, 202, 115);
-}
 
 .burger div {
     width: 25px;
@@ -46,6 +43,12 @@
 
 .burger {
     display: none;
+}
+
+@media (hover: hover) {
+    .nav-item:hover {
+        color: rgb(101, 202, 115);
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -60,7 +63,7 @@
         width: 100%;
         right: 0px;
         height: 55%;
-        top: 6.6vh;
+        top: 60px;
         display: flex;
         flex-direction: column;
         /* justify-content: center; */

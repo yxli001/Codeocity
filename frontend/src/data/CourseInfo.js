@@ -24,6 +24,7 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/embed/pKO9UjSeLew",
+        times: ["Monday, Wednesday : 6-7", "Tuesday, Thursday : 6-7"],
         teachers: checker("Web Dev 1"),
     },
     {
@@ -44,6 +45,7 @@ const CourseInfo = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
         ],
         image: javascript,
+        times: ["Tuesday, Thursday : 7-8"],
         video: "https://www.youtube.com/embed/pKO9UjSeLew",
         teachers: checker("Web Dev 2"),
     },
@@ -65,6 +67,7 @@ const CourseInfo = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
         ],
         image: java,
+        times: ["Tuesday, Thursday : 8-9"],
         video: "https://www.youtube.com/embed/pKO9UjSeLew",
         teachers: checker("Java"),
     },

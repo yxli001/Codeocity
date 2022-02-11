@@ -48,6 +48,7 @@
     border: none;
     color: #616161;
     font-size: 1rem;
+    border: 1px solid #eef5f3;
 }
 
 #name:focus,
@@ -88,19 +89,21 @@
     color: white;
     font-size: 1.1rem;
     background-color: rgb(101, 202, 115);
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     padding: 1rem 0.3rem;
     border-radius: 5px;
-}
-
-.signup-submit:hover {
-    cursor: pointer;
-    background-color: rgb(61, 173, 76);
 }
 
 .hr-jobs {
     width: 100%;
     border: 0.5px solid #e7e7e7;
+}
+
+@media (hover: hover) {
+    .signup-submit:hover {
+        cursor: pointer;
+        background-color: rgb(61, 173, 76);
+    }
 }
 
 @media only screen and (max-width: 1600px) {

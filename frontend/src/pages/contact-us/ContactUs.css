@@ -1,10 +1,11 @@
 #name,
 #email,
-#message {
+#message,
+#web-dev-1 {
     outline: none;
     padding: 3rem 1.4rem;
     background: #eef5f3;
-    border: none;
+    border: 1px solid #eef5f3;
     color: #616161;
     font-size: 1rem;
 }

@@ -8,7 +8,8 @@ import { Footer } from "./pages/footer/Footer";
 // import employees from "./data/Employees";
 import ContactUs from "./pages/contact-us/ContactUs";
 import CourseInfoWrapper from "./pages/courses/course-info-wrapper/CourseInfoWrapper";
-
+import NotFound from "./pages/NotFound/NotFound";
+import CourseSignup from "./pages/courses/course-signup/CourseSignup";
 // Yixuan: forms, second page, home page
 // Brian: navbar, courses, and meet the team
 
@@ -24,6 +25,8 @@ function App() {
                 <Route path="/course/:cid" element={<CourseInfoWrapper />} />
                 <Route path="/apply" element={<Jobs />} />
                 <Route path="/contact-us" element={<ContactUs />} />
+                <Route path="/course/signup/:cid" element={<CourseSignup />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
             <Footer />
         </Router>

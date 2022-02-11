@@ -1,0 +1,86 @@
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.policy {
+    width: 40%;
+    text-align: center;
+}
+
+.form {
+    width: 45%;
+}
+
+.radio {
+    /* border-top: 1px solid rgb(101, 202, 115);
+    border-bottom: 1px solid rgb(101, 202, 115);
+    border-right: 1px solid rgb(101, 202, 115); */
+    /* border-radius: 5%; */
+    /* margin-right: 3%; */
+    background: #eef5f3;
+    color: #616161;
+    padding: 2rem 0.2rem !important;
+    padding-top: 1rem !important;
+    width: 100%;
+}
+
+/* .radio:first-of-type { */
+/* border-left: 1px solid rgb(101, 202, 115); */
+/* } */
+
+.sign-up-checkboxes {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.payment-methods-h2 {
+    color: rgb(101, 202, 115);
+}
+
+.payment-methods-ul {
+    text-align: left;
+    color: #4a4a50;
+}
+
+.oihsfsoiffsa {
+    background: #eef5f3;
+    color: #616161;
+    padding: 0.5rem 0.2rem !important;
+    padding-top: 1rem !important;
+    width: 100%;
+}
+
+.oihsfsoiffsa:last-of-type {
+    padding-bottom: 2rem !important;
+}
+
+.weiufgpfewi {
+    margin: 0;
+    background-color: #eef5f3;
+    font-weight: 600;
+    color: #616161;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    color: rgb(101, 202, 115);
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container {
+        flex-direction: column-reverse;
+        margin-top: -3rem;
+    }
+
+    .policy {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}

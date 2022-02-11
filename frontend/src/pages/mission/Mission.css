@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 3rem 25rem;
     margin-top: 2%;
+    background-color: white;
     /* background-color: #f8f8f8; */
 }
 
@@ -52,10 +53,6 @@
     border-image: linear-gradient(45deg, rgb(61, 173, 76), rgb(101, 202, 115)) 1;
 }
 
-.mission-image:hover {
-    transform: scale(1.05);
-}
-
 .mission-image {
     margin-left: 3rem;
 }
@@ -63,6 +60,12 @@
 .second-image {
     margin-left: 0;
     margin-right: 3rem;
+}
+
+@media (hover: hover) {
+    .mission-image:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media only screen and (max-width: 1800px) {

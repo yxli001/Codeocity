@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.profile-name {
+    font-family: "PT Sans", sans-serif;
+}
+
 .profile-container {
     width: 100%;
     padding: 2%;
@@ -25,12 +29,6 @@
 .profile-image {
     width: 50%;
     object-fit: contain;
-}
-
-@media screen and (max-width: 950px) {
-    .container-meet-team {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .carousel-container {
@@ -71,6 +69,7 @@
     cursor: pointer;
     user-select: none;
 }
+
 .left-arrow {
     position: absolute;
     top: 50%;
@@ -80,6 +79,12 @@
     z-index: 10;
     cursor: pointer;
     user-select: none;
+}
+
+@media screen and (max-width: 950px) {
+    .container-meet-team {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 815px) {

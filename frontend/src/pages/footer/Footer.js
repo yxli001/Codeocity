@@ -37,7 +37,7 @@ export const Footer = () => {
     return (
         <div className="footer-container">
             <div className="section-1">
-                <h2>Codeocity</h2>
+                <h2 className="footer-header">Codeocity</h2>
                 <a
                     href="https://www.instagram.com/codeocity/"
                     target="_blank"

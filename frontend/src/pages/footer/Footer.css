@@ -6,6 +6,7 @@
     color: white;
     width: 100%;
     padding-left: 5%;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: flex-start;
     /* margin-top: 2%; */
@@ -21,6 +22,8 @@
 
 .section-3 {
     margin-top: 5%;
+    /* width: 100%; */
+    font-size: 1rem;
 }
 
 .feedback-form {
@@ -48,33 +51,46 @@
     text-decoration: none;
 }
 
-.custom-nav-item-footer:hover {
-    color: rgb(101, 202, 115);
-    text-decoration: none;
-}
-
 .contact-us-footer {
     background-color: transparent;
     border: 1px solid rgb(101, 202, 115);
     color: rgb(101, 202, 115);
     padding: 10px 25px 10px 25px;
 }
-.contact-us-footer:hover {
-    background-color: rgb(27, 73, 33);
-}
 
 .social-links {
     color: white;
 }
 
-.social-links:hover {
-    color: #e7e7e7;
+.footer-header {
+    color: rgb(101, 202, 115);
+}
+
+@media (hover: hover) {
+    .social-links:hover {
+        color: #e7e7e7;
+    }
+
+    .contact-us-footer:hover {
+        background-color: rgb(27, 73, 33);
+    }
+
+    .custom-nav-item-footer:hover {
+        color: rgb(101, 202, 115);
+        text-decoration: none;
+    }
+
+    .feedback-form-submit:hover {
+        background-color: rgb(66, 175, 81);
+    }
 }
 
 @media screen and (max-width: 1250px) {
     .footer-container {
         display: grid;
         grid-template-columns: 1fr;
+        text-align: center;
+        padding-left: 0;
     }
     .section {
         margin-top: 4%;
@@ -82,5 +98,23 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding: none;
+    }
+    .section-2 {
+        display: none;
+        opacity: 0;
+    }
+    .section-3 {
+        padding-bottom: 2%;
+        width: 100%;
+        font-size: 1rem;
+        word-wrap: break-word;
+    }
+
+    .section-3 > label {
+        font-size: 0.9rem;
+    }
+
+    form {
+        margin-top: 1rem;
     }
 }

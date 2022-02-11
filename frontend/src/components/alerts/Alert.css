@@ -28,11 +28,14 @@
     margin-right: 2%;
     width: 20%;
 }
-.x-wrapper:hover {
-    cursor: pointer;
-}
 
 .y-wrapper {
     margin-left: 2%;
     max-width: 70%;
+}
+
+@media (hover: hover) {
+    .x-wrapper:hover {
+        cursor: pointer;
+    }
 }

@@ -1,0 +1,28 @@
+.not-found-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.not-found-button {
+    padding: 1rem 1.5rem;
+    background-color: rgb(101, 202, 115);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    border: none;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    margin-bottom: 15rem;
+}
+
+@media (hover: hover) {
+    .not-found-button:hover {
+        cursor: pointer;
+        background-color: rgb(61, 173, 76);
+        text-decoration: underline;
+    }
+}
