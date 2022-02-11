@@ -87,14 +87,14 @@ const ContactUs = (props) => {
                     <Alert
                         type="warning"
                         editState={setWarning}
-                        text="Please make sure you filled in all fields of the form and a valid email address before submitting. "
+                        text="Please make sure you filled in all fields of the form as well as a valid email address before submitting. "
                     />
                 )}
                 {success && (
                     <Alert
                         type="success"
                         editState={setSuccess}
-                        text="Application sent successfully! We will get back to you within a few days."
+                        text="Message sent successfully! We will get back to you within a few days."
                     />
                 )}
                 {error && (

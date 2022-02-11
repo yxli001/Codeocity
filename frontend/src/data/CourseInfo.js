@@ -1,7 +1,7 @@
 import { checker } from "./EmployeeChecker";
 import webdev from "../images/webdev.jpg";
 import javascript from "../images/javascript_image.jpg";
-import java from "../images/java.jpg";
+import java from "../images/java.png";
 import comingSoon from "../images/question_mark.jpg";
 
 const CourseInfo = [
