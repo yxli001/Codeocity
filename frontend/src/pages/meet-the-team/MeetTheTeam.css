@@ -28,6 +28,8 @@
 
 .profile-image {
     width: 50%;
+    height: 20rem;
+    margin-left: 4rem;
     object-fit: contain;
 }
 
@@ -102,6 +104,7 @@
     }
     .profile-image {
         width: 80%;
+        margin-left: 0rem;
     }
     .left-arrow {
         left: -60px;
