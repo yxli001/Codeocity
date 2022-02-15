@@ -95,7 +95,7 @@ const Volunteer = () => {
                         Want to help people learn to code? Sign up as a teacher.{" "}
                         <hr className="hr-jobs" />
                         Times are flexible. Minimum 2 hours per week. Starting
-                        salary is $15/hour
+                        salary is $25/hour
                     </h3>
                     {warning && (
                         <Alert

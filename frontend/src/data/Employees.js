@@ -1,6 +1,7 @@
 // import person from "../images/girl_with_better_computer.png";
 import brian from "../images/brian_mason.jpg";
 import yixuan from "../images/yixuan_li_2.JPG";
+import colin from "../images/colin_frankel.png";
 
 const employees = [
     {
@@ -18,6 +19,14 @@ const employees = [
         description:
             "I am a sophomore currently attending Montgomery Virtual Academy. I've been coding for about 4 years and have taught myself programming languages such as Java, Python, JavaScript, and Swift.",
         image: yixuan,
+    },
+    {
+        id: "3",
+        name: "Colin Frankel",
+        roles: ["Web Dev 1"],
+        description:
+            "I am a Sophomore at Walt Whitman Highschool. I have been coding for about four years. I started learning HTML and CSS and then wanted more flexibility in web development and wanted to branch out and learned JavaScript.",
+        image: colin,
     },
 ];
 
