@@ -75,10 +75,11 @@ export const Footer = () => {
                 <form onSubmit={feedbackFormSubmitHandler}>
                     <input
                         type="text"
-                        placeholder="Start typing here"
+                        placeholder="Start typing here, max 100 characters"
                         className="feedback-form"
                         value={feedback}
                         onChange={(e) => setFeedback(e.target.value)}
+                        maxLength={100}
                     />
                     <input type="submit" className="feedback-form-submit" />
                 </form>

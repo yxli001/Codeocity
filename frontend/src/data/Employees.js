@@ -2,6 +2,7 @@
 import brian from "../images/brian_mason.jpg";
 import yixuan from "../images/yixuan_li_2.JPG";
 import colin from "../images/colin_frankel.png";
+import elizabeth from "../images/elizabeth_yamamoto.jpeg";
 
 const employees = [
     {
@@ -27,6 +28,14 @@ const employees = [
         description:
             "I am a Sophomore at Walt Whitman Highschool. I have been coding for about four years. I started learning HTML and CSS and then wanted more flexibility in web development and wanted to branch out and learned JavaScript.",
         image: colin,
+    },
+    {
+        id: "4",
+        name: "Elizabeth Yamamoto",
+        roles: ["Java"],
+        description:
+            "Elizabeth is a Junior at Walt Whitman who started coding as a freshman. She has almost three years of experience with Java and taught it in the past through another student led organization. Last year, she scored a 5 on the AP Computer Science Principles exam, and she is currently completing Computer Programming 3: Advanced Topics, which emphasizes manipulating data structures and ADTs. She was accepted into the University of Maryland's Bits & Bytes program, which focuses on STEM outreach for women in high school. Outside of school, she enjoys reading philosophy, playing the violin, and watching Snowpiercer and The Expanse with her family.",
+        image: elizabeth,
     },
 ];
 

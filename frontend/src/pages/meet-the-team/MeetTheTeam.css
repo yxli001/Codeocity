@@ -120,3 +120,13 @@
     padding-top: 1rem;
     background-color: #f8f8f8;
 }
+
+.read-more-button {
+    color: rgb(101, 202, 115);
+    margin-top: 0.2rem;
+}
+
+.read-more-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

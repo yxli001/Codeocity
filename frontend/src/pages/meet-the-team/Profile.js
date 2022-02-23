@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 // import { FaMehRollingEyes } from "react-icons/fa";
 import "./MeetTheTeam.css";
 
 export const Profile = (props) => {
     const { name, image, description, roles, classesProp } = props;
+    const [expanded, setExpanded] = useState(false);
+
+    const expand = () => {
+        setExpanded(!expanded);
+    };
+
     return (
         <div
             className={`profile-container ${
@@ -21,7 +27,18 @@ export const Profile = (props) => {
                             } `
                     )}
                 </h4>
-                <p className="profile-description">{description}</p>
+                {description.length > 200 ? (
+                    <p className="profile-description">
+                        {expanded
+                            ? description
+                            : description.slice(0, 200) + "..."}
+                        <p className="read-more-button" onClick={expand}>
+                            {expanded ? "Show Less" : "Show More"}
+                        </p>
+                    </p>
+                ) : (
+                    <p className="profile-description">{description}</p>
+                )}
             </div>
             <img src={image} alt={`About ${name}`} className="profile-image" />
         </div>
