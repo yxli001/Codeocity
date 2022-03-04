@@ -29,7 +29,7 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 6-7"],
+        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 6-7pm"],
         teachers: checker("Web Dev 1"),
     },
     {
