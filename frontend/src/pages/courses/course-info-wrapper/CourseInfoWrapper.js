@@ -18,6 +18,7 @@ const CourseInfoWrapper = () => {
                 teachers={course.teachers}
                 video={course.video}
                 price={course.price}
+                numClasses={course.numClasses}
             />
         </div>
     );

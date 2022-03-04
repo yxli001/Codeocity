@@ -43,14 +43,15 @@ const Mission = () => {
                                 is the best time to start, but for many, it is
                                 difficult to know where to begin and how to
                                 structure their learning. That’s where we come
-                                in. Our mission is to provide a primer into the
-                                coding world as well as to teach students to
-                                teach themselves. Each of our lessons will
-                                include homework that forces students to do some
-                                research on their own which will build on top of
-                                what they have learned in class. All of our
-                                classes will be held virtually to allow for more
-                                flexibility for both the students and teachers.
+                                in. Our mission is to provide an introduction
+                                into the coding world as well as to teach
+                                students to teach themselves. Each of our
+                                lessons will include homework that forces
+                                students to do some research on their own which
+                                will build on top of what they have learned in
+                                class. All of our classes will be held virtually
+                                to allow for more flexibility for both the
+                                students and teachers.
                             </p>
                         </div>
                         <img

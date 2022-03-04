@@ -37,7 +37,7 @@
 
 .course-button {
     background-color: rgb(101, 202, 115);
-    box-shadow: -1px 1px rgba(45.75, 129.75, 57, 0.6);
+    /* box-shadow: -1px 1px 1px rgba(45.75, 129.75, 57, 0.7); */
     color: white;
     border: none;
     margin: 0 auto;

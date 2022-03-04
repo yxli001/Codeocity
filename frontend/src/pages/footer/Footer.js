@@ -22,16 +22,18 @@ export const Footer = () => {
 
         setFeedback("");
 
-        await axios({
-            method: "post",
-            url: "http://codeocityorg.herokuapp.com/feedback",
-            data: {
-                feedback,
-            },
-            headers: {
-                "content-type": "application/json",
-            },
-        });
+        if (feedback && feedback !== "") {
+            await axios({
+                method: "post",
+                url: "http://codeocityorg.herokuapp.com/feedback",
+                data: {
+                    feedback,
+                },
+                headers: {
+                    "content-type": "application/json",
+                },
+            });
+        }
     };
 
     return (

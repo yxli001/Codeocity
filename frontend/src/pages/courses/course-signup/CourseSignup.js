@@ -92,16 +92,14 @@ const CourseSignup = (props) => {
                     <li>
                         Venmo
                         <ul>
-                            <li>Insert payment here</li>
-                        </ul>
-                    </li>
-                    <li>
-                        PayPal
-                        <ul>
-                            <li>Insert payment here</li>
+                            <li>@Sonha-Mason</li>
                         </ul>
                     </li>
                 </ul>
+                <p>
+                    <b>Note:</b> Please enter your student[s] name in the note
+                    when you are paying. Thanks!
+                </p>
                 <hr />
                 <h2>Policy</h2>
                 <p>

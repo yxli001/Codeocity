@@ -24,7 +24,8 @@ export const Course = (props) => {
                         >
                             Class size will be no more than four students
                             <br />
-                            10 online classes, twice a week. <br />
+                            {props.numClasses} online classes, twice a week.{" "}
+                            <br />
                             Cost: ${props.price} - $25/hour
                         </b>
                         <Link
@@ -55,12 +56,6 @@ export const Course = (props) => {
                 </div>
             </div>
             <div className="course-content-teachers-wrapper">
-                <div className="teachers-container">
-                    <MeetTheTeam
-                        employees={props.teachers}
-                        title="Meet Your Instructors"
-                    />
-                </div>
                 <div className="course-content-container-learn-more">
                     <h2 className="what-you-learn">What you'll learn</h2>
                     <ul className="course-content">
@@ -74,6 +69,12 @@ export const Course = (props) => {
                             );
                         })}
                     </ul>
+                </div>
+                <div className="teachers-container">
+                    <MeetTheTeam
+                        employees={props.teachers}
+                        title="Meet Your Instructors"
+                    />
                 </div>
             </div>
         </div>

@@ -27,11 +27,11 @@ export const Profile = (props) => {
                             } `
                     )}
                 </h4>
-                {description.length > 200 ? (
+                {description.length > 151 ? (
                     <p className="profile-description">
                         {expanded
                             ? description
-                            : description.slice(0, 200) + "..."}
+                            : description.slice(0, 151) + "..."}
                         <p className="read-more-button" onClick={expand}>
                             {expanded ? "Show Less" : "Show More"}
                         </p>
