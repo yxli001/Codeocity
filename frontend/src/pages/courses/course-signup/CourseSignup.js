@@ -238,7 +238,7 @@ const CourseSignup = (props) => {
                 <div className="times">
                     <p className="weiufgpfewi">Available Times</p>
                     <p className="weiufgpfewi">
-                        Classes start on the week of March 14th
+                        Classes start on the week of April 4th
                     </p>
                     {state.selectedCourse.times.map((time, key) => {
                         return (
