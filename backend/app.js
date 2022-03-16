@@ -33,6 +33,7 @@ let transporter = nodemailer.createTransport({
 });
 
 app.use(express.json());
+app.use(express.text());
 
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -48,7 +49,7 @@ app.use((req, res, next) => {
 });
 
 app.post("/volunteer", (req, res) => {
-    const { firstName, lastName, email, skills } = req.body;
+    const { firstName, lastName, email, skills } = JSON.parse(req.body);
 
     let mailOptions = {
         from: "codeocityorg@gmail.com",
@@ -73,7 +74,7 @@ app.post("/volunteer", (req, res) => {
 });
 
 app.post("/feedback", (req, res) => {
-    const { feedback } = req.body;
+    const { feedback } = JSON.parse(req.body);
 
     let mailOptions = {
         from: "codeocityorg@gmail.com",
@@ -95,7 +96,7 @@ app.post("/feedback", (req, res) => {
 });
 
 app.post("/contact-us", (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, email, message } = JSON.parse(req.body);
 
     let mailOptions = {
         from: "codeocityorg@gmail.com",
@@ -119,7 +120,7 @@ app.post("/contact-us", (req, res) => {
 });
 
 app.post("/enroll", (req, res) => {
-    const { name, email, course, time } = req.body;
+    const { name, email, course, time } = JSON.parse(req.body);
 
     let mailOptions = {
         from: "codeocityorg@gmail.com",
