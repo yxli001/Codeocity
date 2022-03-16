@@ -67,14 +67,14 @@ const Volunteer = () => {
             await axios({
                 method: "post",
                 url: "http://codeocityorg.herokuapp.com/volunteer",
-                data: {
+                data: JSON.stringify({
                     firstName: state.firstName,
                     lastName: state.lastName,
                     email: state.email,
                     skills: state.skills,
-                },
+                }),
                 headers: {
-                    "content-type": "application/json",
+                    "content-type": "text/plain",
                 },
             });
         } catch (error) {

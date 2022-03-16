@@ -57,13 +57,13 @@ const ContactUs = (props) => {
             await axios({
                 method: "post",
                 url: "http://codeocityorg.herokuapp.com/contact-us",
-                data: {
+                data: JSON.stringify({
                     name: state.name,
                     email: state.email,
                     message: state.message,
-                },
+                }),
                 headers: {
-                    "content-type": "application/json",
+                    "content-type": "text/plain",
                 },
             });
         } catch (error) {

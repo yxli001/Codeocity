@@ -66,14 +66,14 @@ const CourseSignup = (props) => {
             await axios({
                 method: "post",
                 url: "http://codeocityorg.herokuapp.com/enroll",
-                data: {
+                data: JSON.stringify({
                     name: state.name,
                     email: state.email,
                     course: state.selectedCourseTitle,
                     time: state.selectedTime,
-                },
+                }),
                 headers: {
-                    "content-type": "application/json",
+                    "content-type": "text/plain",
                 },
             });
         } catch (error) {

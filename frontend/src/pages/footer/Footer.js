@@ -26,11 +26,11 @@ export const Footer = () => {
             await axios({
                 method: "post",
                 url: "http://codeocityorg.herokuapp.com/feedback",
-                data: {
+                data: JSON.stringify({
                     feedback,
-                },
+                }),
                 headers: {
-                    "content-type": "application/json",
+                    "content-type": "text/plain",
                 },
             });
         }
