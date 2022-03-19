@@ -263,6 +263,10 @@ const CourseSignup = (props) => {
                     })}
                 </div>
 
+                <div className="price weiufgpfewi">
+                    Price: ${state.selectedCourse.price}
+                </div>
+
                 <button className="signup-submit" onClick={onSubmitHandler}>
                     Send
                 </button>
