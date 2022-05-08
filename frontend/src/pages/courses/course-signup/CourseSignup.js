@@ -194,9 +194,9 @@ const CourseSignup = (props) => {
                         <input
                             type="radio"
                             name="sign-up"
-                            id="web-dev-2"
-                            value="Web Dev 2"
-                            checked={state.selectedCourseTitle === "Web Dev 2"}
+                            id="intro-to-javascript"
+                            value="Intro to JavaScript"
+                            checked={state.selectedCourseTitle === "Intro to JavaScript"}
                             onChange={(e) => {
                                 setState({
                                     ...state,
@@ -210,7 +210,29 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="web-dev-2">Web Dev 2</label>
+                        <label htmlFor="web-dev-1">Intro to JavaScript</label>
+                    </div>
+                    <div className="radio">
+                        <input
+                            type="radio"
+                            name="sign-up"
+                            id="manipulating-webpages-using-javascript"
+                            value="Manipulating Webpages using JavaScript"
+                            checked={state.selectedCourseTitle === "Manipulating Webpages using JavaScript"}
+                            onChange={(e) => {
+                                setState({
+                                    ...state,
+                                    selectedCourse: courseInfo.find(
+                                        (course) =>
+                                            course.title ===
+                                            e.currentTarget.value
+                                    ),
+                                    selectedCourseTitle: e.currentTarget.value,
+                                });
+                            }}
+                            required={true}
+                        />
+                        <label htmlFor="web-dev-2">Manipulating Webpages using JavaScript</label>
                     </div>
                     <div className="radio">
                         <input
@@ -238,7 +260,7 @@ const CourseSignup = (props) => {
                 <div className="times">
                     <p className="weiufgpfewi">Available Times</p>
                     <p className="weiufgpfewi">
-                        Classes start on the week of April 4th
+                        Classes start on the week of May 16th
                     </p>
                     {state.selectedCourse.times.map((time, key) => {
                         return (
