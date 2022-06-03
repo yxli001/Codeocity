@@ -1,9 +1,10 @@
 import { checker } from "./EmployeeChecker";
 import webdev from "../images/webdev.jpg";
 import javascript from "../images/javascript_image.jpg";
+import dom from "../images/dom_manipulation.jpeg";
 import java from "../images/java.png";
 import comingSoon from "../images/question_mark.jpg";
-
+import scratch from "../images/scratch.jpg";
 const CourseInfo = [
     {
         id: 1,
@@ -29,16 +30,35 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 6-7pm"],
+        times: ["Monday, Thursday : 7-8pm", "Wednesday, Saturday : 6-7pm"],
         teachers: checker("Web Dev 1"),
     },
     {
         id: 2,
-        title: "Web Dev 2",
-        price: 400,
-        numClasses: 16,
+        title: "Scratch Programming",
+        price: 200,
+        numClasses: 8,
         description:
-            "In Web Dev 2, students will learn the basics of vanilla JS and learn how to incorporate it with their previous websites. Students will also learn how to make their websites responsive using flexbox and media queries. Having experience with HTML or Java is required before beginning this course. It is highly recommended to take Web Dev 1 for those who have no experience.",
+            "In the Scratch Programming Course, students will learn how to create basic games using Scratch. This course is designed for elementary school students and focuses on gettting them familiar with the principles of computer science.",
+        content: [
+            "How to create sprites in Scratch",
+            "Sprite movement",
+            "Making Sprites reactive",
+            "Conditionals in Scratch",
+            "Making games with Scratch",
+            "And much, much more!",
+        ],
+        image: scratch,
+        times: ["Tuesday, Saturday : 7-8pm"],
+        teachers: checker("Scratch"),
+    },
+    {
+        id: 3,
+        title: "Intro to JavaScript",
+        price: 200,
+        numClasses: 8,
+        description:
+            "In our Intro to JavaScript course, students will learn the basics of JavaScript syntax. Having experience with HTML or Java is required before beginning this course. It is highly recommended to take Web Dev 1 for those who have no experience.",
         content: [
             "What JavaScript is and why we use it",
             "Logging into the console",
@@ -52,66 +72,30 @@ const CourseInfo = [
             "How to use functions",
             "How to use arrays",
             "What objects are and how to use them",
+        ],
+        image: javascript,
+        times: ["Monday, Thursday : 7-8pm"],
+        video: "https://www.youtube.com/embed/Wu_jWLBqbHI",
+        teachers: checker("Web Dev 2"),
+    },
+    {
+        id: 4,
+        title: "DOM Manipulation",
+        price: 200,
+        numClasses: 8,
+        description:
+            "In this course, students will use JavaScript to manipulate a webpage. Students will select elements and change how they look based on what the user does. It is mandatory to know JavaScript, HTML, and CSS.",
+        content: [
             "What the DOM is",
             "How to select elements",
             "How to modify elements",
             "How to use event listeners",
         ],
-        image: javascript,
+        image: dom,
         times: ["Tuesday, Saturday : 7-8pm"],
         video: "https://www.youtube.com/embed/Wu_jWLBqbHI",
         teachers: checker("Web Dev 2"),
     },
-    {
-        id: 3,
-        title: "Java",
-        numClasses: 12,
-        price: 300,
-        description:
-            "In this course students will dive pretty extensively into developing with Java. It is structured around being a prep course for AP Computer Science Java which is available in most highschools. No prior coding experience is needed to take this course",
-        content: [
-            "What the structure of a Java program is",
-            "What data types are and how we use them",
-            "Using basic math in our programs",
-            "How to use if/else statements",
-            "How to get user input",
-            "How to use loops in our code",
-            "How to use arrays",
-            "What methods are and why we use them",
-            "How to effectively use classes",
-        ],
-        image: java,
-        times: ["Wednesday, Saturday : 5-6pm"],
-        video: "https://www.youtube.com/embed/o_myMSfOXFs",
-        teachers: checker("Java"),
-    },
-    {
-        id: 4,
-        title: "Coming Soon...",
-        description: "",
-        content: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-        ],
-        image: comingSoon,
-        video: "https://www.youtube.com/embed/pKO9UjSeLew",
-        teachers: checker("none"),
-    },
 ];
 
 export default CourseInfo;
-
-//Teachers - Reuse meet the team carousel
-//Price
-//Brief description
-//Overview of curriculum
-//Project by student after completing course
-//Projects showcase - Get people to build as a hiring requirement
-//Add video preview

@@ -32,9 +32,9 @@ export const Profile = (props) => {
                         {expanded
                             ? description
                             : description.slice(0, 151) + "..."}
-                        <p className="read-more-button" onClick={expand}>
+                        <span className="read-more-button" onClick={expand}>
                             {expanded ? "Show Less" : "Show More"}
-                        </p>
+                        </span>
                     </p>
                 ) : (
                     <p className="profile-description">{description}</p>

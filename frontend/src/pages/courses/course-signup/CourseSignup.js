@@ -5,9 +5,11 @@ import validator from "validator";
 import { Alert } from "../../../components/alerts/Alert";
 import "./CourseSignup.css";
 import courseInfo from "../../../data/CourseInfo";
+import { useNavigate } from "react-router-dom";
 
 const CourseSignup = (props) => {
     const { cid } = useParams();
+    const navigate = useNavigate();
 
     const [state, setState] = useState({
         name: "",
@@ -62,6 +64,9 @@ const CourseSignup = (props) => {
             setWarning(false);
             setError(false);
             setSuccess(true);
+            navigate("/payment");
+            props.setSelectedCourse(state.selectedCourseTitle);
+            props.setPrice(state.selectedCourse.price);
 
             await axios({
                 method: "post",
@@ -195,8 +200,11 @@ const CourseSignup = (props) => {
                             type="radio"
                             name="sign-up"
                             id="web-dev-2"
-                            value="Web Dev 2"
-                            checked={state.selectedCourseTitle === "Web Dev 2"}
+                            value="Intro to JavaScript"
+                            checked={
+                                state.selectedCourseTitle ===
+                                "Intro to JavaScript"
+                            }
                             onChange={(e) => {
                                 setState({
                                     ...state,
@@ -210,15 +218,42 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="web-dev-2">Web Dev 2</label>
+                        <label htmlFor="web-dev-2">Intro to JavaScript</label>
+                    </div>
+                    <div className="radio">
+                        <input
+                            type="radio"
+                            name="sign-up"
+                            id="web-dev-2"
+                            value="DOM Manipulation"
+                            checked={
+                                state.selectedCourseTitle === "DOM Manipulation"
+                            }
+                            onChange={(e) => {
+                                setState({
+                                    ...state,
+                                    selectedCourse: courseInfo.find(
+                                        (course) =>
+                                            course.title ===
+                                            e.currentTarget.value
+                                    ),
+                                    selectedCourseTitle: e.currentTarget.value,
+                                });
+                            }}
+                            required={true}
+                        />
+                        <label htmlFor="web-dev-2">DOM Manipulation</label>
                     </div>
                     <div className="radio">
                         <input
                             type="radio"
                             name="sign-up"
                             id="java"
-                            value="Java"
-                            checked={state.selectedCourseTitle === "Java"}
+                            value="Scratch Programming"
+                            checked={
+                                state.selectedCourseTitle ===
+                                "Scratch Programming"
+                            }
                             onChange={(e) => {
                                 setState({
                                     ...state,
@@ -232,13 +267,13 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="java">Java</label>
+                        <label htmlFor="java">Scratch Programming</label>
                     </div>
                 </div>
                 <div className="times">
                     <p className="weiufgpfewi">Available Times</p>
                     <p className="weiufgpfewi">
-                        Classes start on the week of April 4th
+                        Classes start on the week of June 25th
                     </p>
                     {state.selectedCourse.times.map((time, key) => {
                         return (

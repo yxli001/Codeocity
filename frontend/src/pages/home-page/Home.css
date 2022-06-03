@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 4rem;
     background-color: #f8f8f8;
 }
@@ -46,16 +46,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .banner-container {
-        flex-direction: column;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        background-image: url("../../images/girl_with_better_computer.png");
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center;
-    }
-
     .white-filter {
         padding: 3rem;
         background: rgba(255, 255, 255, 0.8);
