@@ -2,6 +2,7 @@
 import brian from "../images/brian_mason.jpg";
 import yixuan from "../images/yixuan_li_2.JPG";
 import colin from "../images/colin_frankel.png";
+import ironcladdev from "../images/ironcladdev.png";
 
 const employees = [
     {
@@ -27,6 +28,14 @@ const employees = [
         description:
             "I am a Sophomore at Walt Whitman Highschool. I have been coding for about four years. I started with learning HTML and CSS and then later learned JavaScript to make content dynamic on my websites!",
         image: colin,
+    },
+    {
+        id: 4,
+        name: "IroncladDev",
+        roles: ["Web Dev 1"],
+        description:
+            "I am a sixteen-year-old fullstack web developer who's been coding for over five years.  I enjoy building websites, games, and enjoying being a redneck out in the country.",
+        image: ironcladdev,
     },
 ];
 

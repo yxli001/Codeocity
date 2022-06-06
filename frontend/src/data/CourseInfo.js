@@ -30,7 +30,11 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: ["Monday, Thursday : 7-8pm", "Wednesday, Saturday : 6-7pm"],
+        times: [
+            "Monday, Thursday : 7-8pm",
+            "Monday, Thursday : 3-4pm",
+            "Tuesday, Friday : 10-11AM",
+        ],
         teachers: checker("Web Dev 1"),
     },
     {
@@ -49,6 +53,7 @@ const CourseInfo = [
             "And much, much more!",
         ],
         image: scratch,
+        video: "https://www.youtube.com/embed/ulAiiCDtp5U",
         times: ["Tuesday, Saturday : 7-8pm"],
         teachers: checker("Scratch"),
     },
@@ -75,7 +80,7 @@ const CourseInfo = [
         ],
         image: javascript,
         times: ["Monday, Thursday : 7-8pm"],
-        video: "https://www.youtube.com/embed/Wu_jWLBqbHI",
+        video: "https://www.youtube.com/embed/e0-IRuJzqi0",
         teachers: checker("Web Dev 2"),
     },
     {
@@ -92,8 +97,8 @@ const CourseInfo = [
             "How to use event listeners",
         ],
         image: dom,
-        times: ["Tuesday, Saturday : 7-8pm"],
-        video: "https://www.youtube.com/embed/Wu_jWLBqbHI",
+        times: ["Monday, Thursday : 7-8pm"],
+        video: "https://www.youtube.com/embed/n7zQiipRY70",
         teachers: checker("Web Dev 2"),
     },
 ];
