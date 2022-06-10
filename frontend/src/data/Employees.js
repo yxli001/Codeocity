@@ -3,6 +3,7 @@ import brian from "../images/brian_mason.jpg";
 import yixuan from "../images/yixuan_li_2.JPG";
 import colin from "../images/colin_frankel.png";
 import ironcladdev from "../images/ironcladdev.png";
+import scollier from "../images/scollier.jpg";
 
 const employees = [
     {
@@ -36,6 +37,14 @@ const employees = [
         description:
             "I am a sixteen-year-old fullstack web developer who's been coding for over five years.  I enjoy building websites, games, and enjoying being a redneck out in the country.",
         image: ironcladdev,
+    },
+    {
+        id: 5,
+        name: "Sam Collier",
+        roles: ["DOM Manipulation"],
+        description:
+            "I am a 15 year old programmer who knows HTML, CSS, and JS, along with a bit of Java and C. I enjoy web development, programming games, and the liberal arts!",
+        image: scollier,
     },
 ];
 

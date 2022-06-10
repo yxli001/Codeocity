@@ -54,7 +54,7 @@ const CourseInfo = [
         ],
         image: scratch,
         video: "https://www.youtube.com/embed/ulAiiCDtp5U",
-        times: ["Tuesday, Saturday : 7-8pm"],
+        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 7-8pm"],
         teachers: checker("Scratch"),
     },
     {
@@ -99,7 +99,7 @@ const CourseInfo = [
         image: dom,
         times: ["Monday, Thursday : 7-8pm"],
         video: "https://www.youtube.com/embed/n7zQiipRY70",
-        teachers: checker("Web Dev 2"),
+        teachers: checker("DOM Manipulation"),
     },
 ];
 
