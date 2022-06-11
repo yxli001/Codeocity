@@ -1,13 +1,34 @@
 import { checker } from "./EmployeeChecker";
 import webdev from "../images/webdev.jpg";
-import javascript from "../images/javascript_image.jpg";
-import dom from "../images/dom_manipulation.jpeg";
+import javascript from "../images/js.png";
+import dom from "../images/dom.png";
 import java from "../images/java.png";
 import comingSoon from "../images/question_mark.jpg";
-import scratch from "../images/scratch.jpg";
+import scratch from "../images/scratch-og.png";
 const CourseInfo = [
     {
         id: 1,
+        title: "Scratch Programming",
+        price: 200,
+        numClasses: 8,
+        description:
+            "In the Scratch Programming Course, students will learn how to create basic games using Scratch. This course is designed for elementary school students and focuses on gettting them familiar with the principles of computer science.",
+        content: [
+            "How to create sprites in Scratch",
+            "Sprite movement",
+            "Making Sprites reactive",
+            "Conditionals in Scratch",
+            "Making games with Scratch",
+            "And much, much more!",
+        ],
+        image: scratch,
+        video: "https://www.youtube.com/embed/ulAiiCDtp5U",
+        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 7-8pm"],
+        teachers: checker("Scratch"),
+        madeFor: "elementary schoolers",
+    },
+    {
+        id: 2,
         title: "Web Dev 1",
         price: 250,
         numClasses: 10,
@@ -30,32 +51,9 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: [
-            "Monday, Thursday : 7-8pm",
-            "Monday, Thursday : 3-4pm",
-            "Tuesday, Friday : 10-11AM",
-        ],
+        times: ["Monday, Thursday : 3-4pm", "Tuesday, Friday : 10-11AM"],
         teachers: checker("Web Dev 1"),
-    },
-    {
-        id: 2,
-        title: "Scratch Programming",
-        price: 200,
-        numClasses: 8,
-        description:
-            "In the Scratch Programming Course, students will learn how to create basic games using Scratch. This course is designed for elementary school students and focuses on gettting them familiar with the principles of computer science.",
-        content: [
-            "How to create sprites in Scratch",
-            "Sprite movement",
-            "Making Sprites reactive",
-            "Conditionals in Scratch",
-            "Making games with Scratch",
-            "And much, much more!",
-        ],
-        image: scratch,
-        video: "https://www.youtube.com/embed/ulAiiCDtp5U",
-        times: ["Monday, Thursday : 7-8pm", "Tuesday, Saturday : 7-8pm"],
-        teachers: checker("Scratch"),
+        madeFor: "middle schoolers",
     },
     {
         id: 3,
@@ -82,6 +80,7 @@ const CourseInfo = [
         times: ["Monday, Thursday : 7-8pm"],
         video: "https://www.youtube.com/embed/e0-IRuJzqi0",
         teachers: checker("Web Dev 2"),
+        madeFor: "middle schoolers",
     },
     {
         id: 4,
@@ -100,6 +99,7 @@ const CourseInfo = [
         times: ["Monday, Thursday : 7-8pm"],
         video: "https://www.youtube.com/embed/n7zQiipRY70",
         teachers: checker("DOM Manipulation"),
+        madeFor: "middle schoolers",
     },
 ];
 

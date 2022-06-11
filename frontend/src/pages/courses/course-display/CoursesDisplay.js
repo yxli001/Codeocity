@@ -14,6 +14,9 @@ export const CoursesDisplay = () => {
                         title={course.title}
                         id={course.id}
                         image={course.image}
+                        madeFor={course.madeFor}
+                        price={course.price}
+                        length={course.numClasses}
                     />
                 );
             })}

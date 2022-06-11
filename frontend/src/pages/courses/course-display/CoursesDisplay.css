@@ -1,26 +1,14 @@
 .container {
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-gap: 15%; */
-    /* padding-top: 2.5%;
-    padding-right: 2.5%; */
     margin-top: 1.5%;
     margin-right: 10%;
     text-align: center;
-    column-gap: 7.5%;
+    column-gap: 6%;
     margin-left: 10%;
     margin-bottom: 2%;
     margin-left: 8%;
     row-gap: 1rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #f8f8f8;
-    padding-top: 2.5%;
-    padding-right: 2.5%; */
 }
 
 @media screen and (max-width: 1000px) {

@@ -24,6 +24,13 @@ const CoursesBanner = () => {
                                 <h2 className={styles.courseTitle}>
                                     {course.title}
                                 </h2>
+                                <p className={styles.courseInfo}>
+                                    For {course.madeFor}
+                                </p>
+                                <p className={styles.courseInfo}>
+                                    {course.numClasses} classes | $
+                                    {course.price}
+                                </p>
                             </div>
                         </Link>
                     );

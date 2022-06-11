@@ -3,31 +3,35 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     border: 1px solid #d1d1d1;
     border-radius: 5px;
     background-color: white;
-    padding: 1rem;
-    padding-top: 1rem;
+    /* padding: 1rem; */
     padding-bottom: 2rem;
     margin-bottom: 1rem;
 }
 
 .title {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     color: rgb(101, 202, 115);
     font-family: "PT Sans", sans-serif;
 }
 
+.made-for {
+    width: 90%;
+    margin: 0.2rem auto;
+}
+
 .course-image {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 350px;
     margin: 0 auto;
     margin-bottom: 0%;
     transition: transform 0.3s ease-out;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .course-text {
@@ -52,17 +56,9 @@
         cursor: pointer;
         text-decoration: underline;
     }
-
-    .course-image:hover {
-        transform: scale(1.05);
-    }
 }
 
 @media screen and (max-width: 1400px) {
-    .course-image {
-        width: 95%;
-    }
-
     .course-text {
         font-size: 1rem;
         line-height: 130%;
@@ -74,19 +70,12 @@
         width: 90%;
         margin-bottom: 4%;
     }
-    .course-image {
-        width: 80%;
-    }
     .course-text {
         width: 85%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .course-image {
-        width: 97%;
-    }
-
     .course-text {
         width: 90%;
         margin-bottom: 2rem;

@@ -1,64 +1,67 @@
 import React from "react";
 
-import "./Mission.css";
 import personCoding from "../../images/person-coding.jpg";
 import dreamBig from "../../images/dream-big.jpg";
-
+import styles from "./Mission.module.css";
 const Mission = () => {
+    // We are a team of dedicated high school students
+    //                                 who each have at least two years of coding
+    //                                 experience. Getting into coding at a young age
+    //                                 is the best time to start, but for many, it is
+    //                                 difficult to know where to begin and how to
+    //                                 structure their learning. That’s where we come
+    //                                 in. Our mission is to provide an introduction
+    //                                 into the coding world as well as to teach
+    //                                 students to teach themselves. Each of our
+    //                                 lessons will include homework that forces
+    //                                 students to do some research on their own which
+    //                                 will build on top of what they have learned in
+    //                                 class. All of our classes will be held virtually
+    //                                 to allow for more flexibility for both the
+    //                                 students and teachers.
+
     return (
-        <div>
-            <div>
-                <div className="mission-container">
-                    <div className="top">
-                        <div className="mission-text-container">
-                            <h2 className="mission-text-title">Why Code?</h2>
-                            <p className="mission-text-description">
-                                One day you can have an idea for a website, app,
-                                or game, and the next, you can publish it for
-                                anyone around the world to use. Second, coding
-                                is one of the highest in-demand skills, with a
-                                median wage of around 90k. The upper quartile of
-                                this range extends to the hundreds of thousands
-                                if you can land a job at one of the top tech
-                                companies. Finally, coding teaches you
-                                problem-solving skills by forcing you to think
-                                logically and analytically. It also builds grit
-                                as sitting down and debugging errors is quite
-                                tedious.
-                            </p>
-                        </div>
-                        <img
-                            className="mission-image"
-                            src={personCoding}
-                            alt=""
-                        />
+        <div className={styles.pageContainer}>
+            <div className={styles.missionContainer}>
+                <div className={styles.container}>
+                    <div className={styles.adText}>
+                        <h2 className={styles.center}>
+                            Our Experience With Programming
+                        </h2>
+                        <p className={styles.text}>
+                            "I began to learn programming in fifth grade through
+                            an online course. At first I was motivated by
+                            wanting to build an ecommerce website. At the time,
+                            I was really into gardening and wanted to create a
+                            website where I could sell my vegetables.
+                            Programming turned into an outlet for my creativity.
+                            Today, knowing how to code has allowed me to build
+                            whatever company ideas I have (perhaps too many)
+                            which is why we created Codeocity. We wanted to
+                            spread our passion to other people, so they can
+                            enjoy this skill as much as we do."
+                            <div className={styles.by}>-Brian Mason</div>
+                        </p>
                     </div>
-                    <div className="bottom">
-                        <div className="mission-text-container">
-                            <h2 className="mission-text-title">Why Us?</h2>
-                            <p className="mission-text-description">
-                                We are a team of dedicated high school students
-                                who each have at least two years of coding
-                                experience. Getting into coding at a young age
-                                is the best time to start, but for many, it is
-                                difficult to know where to begin and how to
-                                structure their learning. That’s where we come
-                                in. Our mission is to provide an introduction
-                                into the coding world as well as to teach
-                                students to teach themselves. Each of our
-                                lessons will include homework that forces
-                                students to do some research on their own which
-                                will build on top of what they have learned in
-                                class. All of our classes will be held virtually
-                                to allow for more flexibility for both the
-                                students and teachers.
-                            </p>
-                        </div>
-                        <img
-                            className="mission-image second-image"
-                            src={dreamBig}
-                            alt=""
-                        />
+                    <div className={styles.uniqueText}>
+                        <h2 className={styles.center}>Why Choose Codeocity?</h2>
+                        <ul>
+                            <li className={styles.item}>
+                                We are a team of passionate, experienced high
+                                school students
+                            </li>
+                            <li className={styles.item}>
+                                Our curriculum is structured around having learn
+                                by building
+                            </li>
+                            <li className={styles.item}>
+                                We help them learn how to do their own research
+                                with online resources
+                            </li>
+                            <li className={styles.item}>
+                                Fully virtual classes to allow for flexibility
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
