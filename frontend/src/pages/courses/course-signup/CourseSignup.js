@@ -108,9 +108,10 @@ const CourseSignup = (props) => {
                 <hr />
                 <h2>Policy</h2>
                 <p>
-                    Courses are held twice a week on the days and times
-                    selected. Classes will also have no more than 4 students per
-                    teacher to allow for higher quality instruction.&nbsp;
+                    Courses are held twice a week on the days and times selected
+                    via Google Meet. Classes will also have no more than 4
+                    students per teacher to allow for higher quality
+                    instruction.&nbsp;
                     <b>
                         Refunds are available up until the course start date and
                         from then on will not be.

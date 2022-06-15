@@ -3,8 +3,9 @@
         "dotenv": "^14.3.2",
         "express": "^4.17.2",
         "express-rate-limit": "^6.2.0",
+        "googleapis": "^101.0.0",
         "helmet": "^5.0.2",
-        "nodemailer": "^6.7.2",
+        "nodemailer": "^6.7.5",
         "xss-clean": "^0.1.1"
     },
     "name": "backend",

@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
-
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 const helmet = require("helmet");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
@@ -24,11 +25,33 @@ app.use(
     })
 );
 
+const { OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REFRESH_TOKEN } =
+    process.env;
+
+const oauth2Client = new OAuth2(
+    OAUTH_CLIENT_ID, // ClientID
+    OAUTH_CLIENT_SECRET, // Client Secret
+    "https://developers.google.com/oauthplayground" // Redirect URL
+);
+
+oauth2Client.setCredentials({
+    refresh_token: OAUTH_REFRESH_TOKEN,
+});
+
+const accessToken = oauth2Client.getAccessToken();
+
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: process.env.MAIL_USERNAME,
-        pass: process.env.MAIL_PASSWORD,
+        type: "OAuth2",
+        user: "lxd520anna@gmail.com",
+        clientId: OAUTH_CLIENT_ID,
+        clientSecret: OAUTH_CLIENT_SECRET,
+        refreshToken: OAUTH_REFRESH_TOKEN,
+        accessToken: accessToken,
+    },
+    tls: {
+        rejectUnauthorized: false,
     },
 });
 
@@ -52,8 +75,8 @@ app.post("/volunteer", (req, res) => {
     const { firstName, lastName, email, skills } = JSON.parse(req.body);
 
     let mailOptions = {
-        from: "codeocityorg@gmail.com",
-        to: "codeocityorg@gmail.com",
+        from: "lxd520anna@gmail.com",
+        to: "contact@codeocity.org",
         subject: "Job Application",
         // text: `Feedback: ${feedback}`,
         html: `<h1 style="font-size:20px;font-weight:600;">Name: ${firstName} ${lastName}</h1>
@@ -77,8 +100,8 @@ app.post("/feedback", (req, res) => {
     const { feedback } = JSON.parse(req.body);
 
     let mailOptions = {
-        from: "codeocityorg@gmail.com",
-        to: "codeocityorg@gmail.com",
+        from: "lxd520anna@gmail.com",
+        to: "contact@codeocity.org",
         subject: "User Feedback",
         // text: `Feedback: ${feedback}`,
         html: `<p style="font-size:20px;font-weight:300;">Feedback: ${feedback}</p><p style="font-size:20px;font-weight:300;">Time: ${new Date().toLocaleString()}</p>`,
@@ -99,8 +122,8 @@ app.post("/contact-us", (req, res) => {
     const { name, email, message } = JSON.parse(req.body);
 
     let mailOptions = {
-        from: "codeocityorg@gmail.com",
-        to: "codeocityorg@gmail.com",
+        from: "lxd520anna@gmail.com",
+        to: "contact@codeocity.org",
         subject: "User Message",
         html: `<h1 style="font-size:20px;font-weight:600;">Name: ${name}</h1>
                 <h1 style="font-size:20px;font-weight:600;">Email: ${email}</h1>
@@ -123,8 +146,8 @@ app.post("/enroll", (req, res) => {
     const { name, email, course, time } = JSON.parse(req.body);
 
     let mailOptions = {
-        from: "codeocityorg@gmail.com",
-        to: "codeocityorg@gmail.com",
+        from: "lxd520anna@gmail.com",
+        to: "contact@codeocity.org",
         subject: "Enroll Request",
         html: `<h1 style="font-size:20px;font-weight:600;">Name: ${name}</h1>
                 <h1 style="font-size:20px;font-weight:600;">Email: ${email}</h1>
@@ -148,5 +171,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server runnign on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
