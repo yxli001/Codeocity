@@ -4,6 +4,7 @@ import yixuan from "../images/yixuan_li_2.JPG";
 import colin from "../images/colin_frankel.png";
 import ironcladdev from "../images/ironcladdev.png";
 import scollier from "../images/scollier.jpg";
+import sophie from "../images/sophie.jpg";
 
 const employees = [
     {
@@ -45,6 +46,14 @@ const employees = [
         description:
             "I am a 15 year old programmer who knows HTML, CSS, and JS, along with a bit of Java and C. I enjoy web development, programming games, and the liberal arts!",
         image: scollier,
+    },
+    {
+        id: 5,
+        name: "Sophie Hansen",
+        roles: ["Scratch"],
+        description:
+            "I am a sophomore at Montgomery Blair High School who has been coding for about 4 years. Through school and at-home projects, I have learned Python, HTML, Java, and some JavaScript. Outside of school, I enjoy photography, art, and listening to music!",
+        image: sophie,
     },
 ];
 

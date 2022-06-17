@@ -122,6 +122,7 @@
 }
 
 .read-more-button {
+    display: block;
     color: rgb(101, 202, 115);
     margin-top: 0.2rem;
 }
