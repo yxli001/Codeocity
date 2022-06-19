@@ -157,6 +157,7 @@
     .course-content-teachers-wrapper {
         grid-template-columns: 1fr;
         padding: 0;
+        margin-bottom: 2rem;
     }
     .course-content-container-learn-more {
         padding: 0rem;

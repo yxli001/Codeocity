@@ -23,7 +23,10 @@ const CourseInfo = [
         ],
         image: scratch,
         video: "https://www.youtube.com/embed/ulAiiCDtp5U",
-        times: ["Monday, Thursday : 10-11am EDT", "Tuesday, Saturday : 4-5pm EDT"],
+        times: [
+            "Monday, Thursday : 10-11am EDT",
+            "Tuesday, Saturday : 4-5pm EDT",
+        ],
         teachers: checker("Scratch"),
         madeFor: "elementary schoolers",
     },
@@ -51,7 +54,10 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: ["Monday, Thursday : 3-4pm EDT", "Tuesday, Friday : 10-11AM EDT"],
+        times: [
+            "Monday, Thursday : 3-4pm EDT",
+            "Tuesday, Friday : 10-11AM EDT",
+        ],
         teachers: checker("Web Dev 1"),
         madeFor: "middle schoolers",
     },
@@ -79,7 +85,7 @@ const CourseInfo = [
         image: javascript,
         times: ["Monday, Thursday : 7-8pm EDT"],
         video: "https://www.youtube.com/embed/e0-IRuJzqi0",
-        teachers: checker("Web Dev 2"),
+        teachers: checker("Intro to JavaScript"),
         madeFor: "middle schoolers",
     },
     {
