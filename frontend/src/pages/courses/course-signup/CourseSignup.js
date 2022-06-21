@@ -200,7 +200,7 @@ const CourseSignup = (props) => {
                         <input
                             type="radio"
                             name="sign-up"
-                            id="web-dev-2"
+                            id="intro-to-js"
                             value="Intro to JavaScript"
                             checked={
                                 state.selectedCourseTitle ===
@@ -219,13 +219,13 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="web-dev-2">Intro to JavaScript</label>
+                        <label htmlFor="intro-to-js">Intro to JavaScript</label>
                     </div>
                     <div className="radio">
                         <input
                             type="radio"
                             name="sign-up"
-                            id="web-dev-2"
+                            id="dom-manipulation"
                             value="DOM Manipulation"
                             checked={
                                 state.selectedCourseTitle === "DOM Manipulation"
@@ -243,7 +243,9 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="web-dev-2">DOM Manipulation</label>
+                        <label htmlFor="dom-manipulation">
+                            DOM Manipulation
+                        </label>
                     </div>
                     <div className="radio">
                         <input
