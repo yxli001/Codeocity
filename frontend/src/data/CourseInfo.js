@@ -2,8 +2,6 @@ import { checker } from "./EmployeeChecker";
 import webdev from "../images/webdev.jpg";
 import javascript from "../images/js.png";
 import dom from "../images/dom.png";
-import java from "../images/java.png";
-import comingSoon from "../images/question_mark.jpg";
 import scratch from "../images/scratch-og.png";
 const CourseInfo = [
     {

@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2;
+// const OAuth2 = google.auth.OAuth2;
 const helmet = require("helmet");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
@@ -25,30 +25,36 @@ app.use(
     })
 );
 
-const { OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REFRESH_TOKEN } =
-    process.env;
+const {
+    OAUTH_CLIENT_ID,
+    OAUTH_CLIENT_SECRET,
+    OAUTH_REFRESH_TOKEN,
+    MAIL_USERNAME,
+    MAIL_PASSWORD,
+} = process.env;
 
-const oauth2Client = new OAuth2(
-    OAUTH_CLIENT_ID, // ClientID
-    OAUTH_CLIENT_SECRET, // Client Secret
-    "https://developers.google.com/oauthplayground" // Redirect URL
-);
+// const oauth2Client = new OAuth2(
+//     OAUTH_CLIENT_ID, // ClientID
+//     OAUTH_CLIENT_SECRET, // Client Secret
+//     "https://developers.google.com/oauthplayground" // Redirect URL
+// );
 
-oauth2Client.setCredentials({
-    refresh_token: OAUTH_REFRESH_TOKEN,
-});
+// oauth2Client.setCredentials({
+//     refresh_token: OAUTH_REFRESH_TOKEN,
+// });
 
-const accessToken = oauth2Client.getAccessToken();
+// const accessToken = oauth2Client.getAccessToken();
 
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         type: "OAuth2",
-        user: "lxd520anna@gmail.com",
+        user: MAIL_USERNAME,
+        pass: MAIL_PASSWORD,
         clientId: OAUTH_CLIENT_ID,
         clientSecret: OAUTH_CLIENT_SECRET,
         refreshToken: OAUTH_REFRESH_TOKEN,
-        accessToken: accessToken,
+        // accessToken: accessToken,
     },
     tls: {
         rejectUnauthorized: false,
