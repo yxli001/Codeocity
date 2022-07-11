@@ -65,7 +65,7 @@ export const Course = (props) => {
                 <div className="schedule-container course-content-container-learn-more">
                     <h2 className="what-you-learn">Course Schedule</h2>
                     <p className="center">
-                        <b>Classes start the week of June 27th</b>
+                        <b>Classes start the week of {props.startsOn}</b>
                     </p>
                     {props.times.map((time) => {
                         return <p className="center">{time}</p>;

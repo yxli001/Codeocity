@@ -20,6 +20,7 @@ const CourseInfoWrapper = () => {
                 price={course.price}
                 numClasses={course.numClasses}
                 times={course.times}
+                startsOn={course.startsOn}
             />
         </div>
     );
