@@ -121,7 +121,7 @@ const CourseInfo = [
         ],
         image: advancedCSS,
         times: ["Monday, Thursday : 3-4pm EDT"],
-        video: "https://www.youtube.com/embed/n7zQiipRY70",
+        video: "",
         teachers: checker("Advanced CSS"),
         madeFor: "middle schoolers",
         startsOn: "August 1st",
