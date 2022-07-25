@@ -3,6 +3,8 @@ import webdev from "../images/webdev.jpg";
 import javascript from "../images/js.png";
 import dom from "../images/dom.png";
 import scratch from "../images/scratch-og.png";
+import advancedCSS from "../images/advanced_css.png";
+
 const CourseInfo = [
     {
         id: 1,
@@ -100,9 +102,29 @@ const CourseInfo = [
             "How to use event listeners",
         ],
         image: dom,
-        times: ["Monday, Thursday : 7-8pm EDT"],
+        times: ["Tuesday, Saturday : 7-8pm EDT"],
         video: "https://www.youtube.com/embed/n7zQiipRY70",
         teachers: checker("DOM Manipulation"),
+        madeFor: "middle schoolers",
+        startsOn: "August 1st",
+    },
+    {
+        id: 5,
+        title: "Advanced CSS",
+        price: 200,
+        numClasses: 8,
+        description:
+            "This course teaches students to create advanced layouts on their websites using technologies such as flexbox, grid, and media queries in CSS. ",
+        content: [
+            "More CSS properties",
+            "Flexbox",
+            "Grid",
+            "Responsive layout/media queries",
+        ],
+        image: advancedCSS,
+        times: ["Monday, Thursday : 3-4pm EDT"],
+        video: "https://www.youtube.com/embed/n7zQiipRY70",
+        teachers: checker("Advanced CSS"),
         madeFor: "middle schoolers",
         startsOn: "August 1st",
     },

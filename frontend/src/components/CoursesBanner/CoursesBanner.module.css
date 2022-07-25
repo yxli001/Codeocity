@@ -12,12 +12,12 @@
 .coursesContainer {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .courseImage {
-    width: 330px;
-    height: 200px;
+    width: 280px;
+    height: 160px;
     object-fit: cover;
 }
 

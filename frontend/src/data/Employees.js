@@ -10,7 +10,12 @@ const employees = [
     {
         id: 1,
         name: "Brian Mason",
-        roles: ["Co-founder", "Web Dev 1", "Intro to JavaScript", "Scratch"],
+        roles: [
+            "Co-founder",
+            "Web Dev 1",
+            "Intro to JavaScript",
+            "Advanced CSS",
+        ],
         description:
             "I am a sophomore at Walt Whitman Highschool and have been coding for about five years now. I began with website development and then diversified into other languages like Python, Java, and Kotlin! Outside of school, I enjoy playing tennis and am on the Whitman Varsity Tennis Team.",
         image: brian,
@@ -18,7 +23,7 @@ const employees = [
     {
         id: 2,
         name: "Yixuan Li",
-        roles: ["Co-founder", "Web Dev 1", "Scratch", "DOM Manipulation"],
+        roles: ["Co-founder", "Web Dev 1"],
         description:
             "I am a sophomore currently attending Montgomery Virtual Academy. I've been coding for about 4 years and have taught myself programming languages such as Java, Python, JavaScript, and Swift. ",
         image: yixuan,
@@ -30,14 +35,6 @@ const employees = [
         description:
             "I am a Sophomore at Walt Whitman Highschool. I have been coding for about four years. I started with learning HTML and CSS and then later learned JavaScript to make content dynamic on my websites!",
         image: colin,
-    },
-    {
-        id: 4,
-        name: "IroncladDev",
-        roles: ["Web Dev 1"],
-        description:
-            "I am a sixteen-year-old fullstack web developer who's been coding for over five years.  I enjoy building websites, games, and enjoying being a redneck out in the country.",
-        image: ironcladdev,
     },
     {
         id: 5,
