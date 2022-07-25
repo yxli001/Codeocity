@@ -52,10 +52,7 @@ const CourseInfo = [
         ],
         image: webdev,
         video: "https://www.youtube.com/watch?v=yOiZifoQ9_U",
-        times: [
-            "Monday, Thursday : 7-8pm EDT",
-            "Tuesday, Saturday : 5-6pm EDT",
-        ],
+        times: ["Monday, Thursday : 7-8pm EDT"],
         teachers: checker("Web Dev 1"),
         madeFor: "middle schoolers",
         startsOn: "August 1st",
@@ -108,6 +105,7 @@ const CourseInfo = [
         madeFor: "middle schoolers",
         startsOn: "August 1st",
     },
+
     {
         id: 5,
         title: "Advanced CSS",
