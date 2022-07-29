@@ -251,7 +251,7 @@ const CourseSignup = (props) => {
                         <input
                             type="radio"
                             name="sign-up"
-                            id="java"
+                            id="scratch"
                             value="Scratch Programming"
                             checked={
                                 state.selectedCourseTitle ===
@@ -270,7 +270,31 @@ const CourseSignup = (props) => {
                             }}
                             required={true}
                         />
-                        <label htmlFor="java">Scratch Programming</label>
+                        <label htmlFor="scratch">Scratch Programming</label>
+                    </div>
+                    <div className="radio">
+                        <input
+                            type="radio"
+                            name="sign-up"
+                            id="css"
+                            value="Advanced CSS"
+                            checked={
+                                state.selectedCourseTitle === "Advanced CSS"
+                            }
+                            onChange={(e) => {
+                                setState({
+                                    ...state,
+                                    selectedCourse: courseInfo.find(
+                                        (course) =>
+                                            course.title ===
+                                            e.currentTarget.value
+                                    ),
+                                    selectedCourseTitle: e.currentTarget.value,
+                                });
+                            }}
+                            required={true}
+                        />
+                        <label htmlFor="css">Advanced CSS</label>
                     </div>
                 </div>
                 <div className="times">
