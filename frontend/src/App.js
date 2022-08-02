@@ -12,7 +12,6 @@ import NotFound from "./pages/NotFound/NotFound";
 import CourseSignup from "./pages/courses/course-signup/CourseSignup";
 import { useState } from "react";
 import PaymentReminder from "./pages/Payment-Reminder/PaymentReminder";
-import FormDownBanner from "./components/FormDownBanner/FormDownBanner";
 // Yixuan: forms, second page, home page
 // Brian: navbar, courses, and meet the team
 
@@ -25,7 +24,6 @@ function App() {
             <div className="navbar">
                 <Navbar />
             </div>
-            <FormDownBanner />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
@@ -33,7 +31,7 @@ function App() {
                 <Route path="/apply" element={<Jobs />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route
-                    path="/course/signup/:cid"
+                    path="/course/signup/"
                     element={
                         <CourseSignup
                             setSelectedCourse={setSelectedCourse}

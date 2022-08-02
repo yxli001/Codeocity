@@ -34,76 +34,9 @@
     margin-bottom: 1rem;
 }
 
-/* .form-description:nth-last-of-type() {
-    margin: 0;
-} */
-
-#firstName,
-#lastName,
-#email,
-#skills {
-    outline: none;
-    padding: 3rem 1.4rem;
-    background: #eef5f3;
-    border: none;
-    color: #616161;
-    font-size: 1rem;
-    border: 1px solid #eef5f3;
-}
-
-#name:focus,
-#message:focus,
-#firstName:focus,
-#lastName:focus,
-#email:focus,
-#skills:focus {
-    border: 1px solid rgb(61, 173, 76);
-}
-
-::placeholder {
-    color: #8f8f8f;
-}
-
-#firstName {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#skills {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#email {
-    margin-top: 0;
-    border-radius: none;
-}
-
-#phone {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.signup-submit {
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-    background-color: rgb(101, 202, 115);
-    margin-top: 1.5rem;
-    padding: 1rem 0.3rem;
-    border-radius: 5px;
-}
-
 .hr-jobs {
     width: 100%;
     border: 0.5px solid #e7e7e7;
-}
-
-@media (hover: hover) {
-    .signup-submit:hover {
-        cursor: pointer;
-        background-color: rgb(61, 173, 76);
-    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -118,6 +51,17 @@
     }
 
     .form {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+
+    .form-container {
+        padding-left: 8%;
+        padding-right: 8%;
+        flex-direction: column-reverse;
+    }
+
+    .google-form {
         width: 100%;
     }
 }
@@ -125,6 +69,10 @@
 @media only screen and (max-width: 800px) {
     .form-container {
         padding: 3rem 5rem;
+    }
+
+    .form {
+        width: 100% !important;
     }
 }
 

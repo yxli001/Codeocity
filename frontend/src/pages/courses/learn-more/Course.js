@@ -30,7 +30,7 @@ export const Course = (props) => {
                             Cost: ${props.price} - $25/hour
                         </b>
                         <Link
-                            to={`/course/signup/${cid}`}
+                            to={`/course/signup/`}
                             className="enroll-link btn-enroll animate__animated animate__pulse animate__infinite	infinite"
                         >
                             Enroll
