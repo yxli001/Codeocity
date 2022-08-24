@@ -1,7 +1,5 @@
 import React from "react";
 
-import personCoding from "../../images/person-coding.jpg";
-import dreamBig from "../../images/dream-big.jpg";
 import styles from "./Mission.module.css";
 const Mission = () => {
     // We are a team of dedicated high school students

@@ -26,8 +26,15 @@ const CourseSignup = (props) => {
                     students per teacher to allow for higher quality
                     instruction.&nbsp;
                     <b>
-                        Refunds are available up until the course start date and
-                        from then on will not be.
+                        <br />
+                        <br />
+                        We offer 100% refunds prior to the first class starting,
+                        and 50% refunds of the remaining classes after the first
+                        class. For example, if there's 5 classes remaining at
+                        the time of requesting a refund, we will refund $25 * 5
+                        * 0.5 = $62.5.
+                        <br />
+                        <br />
                     </b>
                     &nbsp;If for some reason the instructor cannot teach the
                     lesson material in the scheduled time frame, extra classes

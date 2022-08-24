@@ -2,7 +2,6 @@
 import brian from "../images/brian_mason.jpg";
 import yixuan from "../images/yixuan_li_2.JPG";
 import colin from "../images/colin_frankel.png";
-import ironcladdev from "../images/ironcladdev.png";
 import scollier from "../images/scollier.jpg";
 import sophie from "../images/sophie.jpg";
 
