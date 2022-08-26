@@ -24,22 +24,22 @@ const Mission = () => {
                 <div className={styles.container}>
                     <div className={styles.adText}>
                         <h2 className={styles.center}>
-                            Our Experience With Programming
+                            Previous customers have said...
                         </h2>
                         <p className={styles.text}>
-                            "I began to learn programming in fifth grade through
-                            an online course. At first I was motivated by
-                            wanting to build an ecommerce website. At the time,
-                            I was really into gardening and wanted to create a
-                            website where I could sell my vegetables.
-                            Programming turned into an outlet for my creativity.
-                            Today, knowing how to code has allowed me to build
-                            whatever company ideas I have (perhaps too many)
-                            which is why we created Codeocity. We wanted to
-                            spread our passion to other people, so they can
-                            enjoy this skill as much as we do."
-                            <div className={styles.by}>-Brian Mason</div>
+                            "Thank you so much! You (and Yixuan) were really
+                            great and Aleksei said he learned a lot. He's done
+                            other coding classes on Outschool, but he said yours
+                            was better as he got to apply the things he learned
+                            to one project as opposed to learning new things and
+                            projects every week which were really overwhelming.
+                            Looking forward to your fall class! "
                         </p>
+                        <p className={styles.text}>
+                            "Thanks to Brian and Yixuan for that awesome
+                            experience"
+                        </p>
+                        {/* <p className={styles.by}>- Codeocity Customers</p> */}
                     </div>
                     <div className={styles.uniqueText}>
                         <h2 className={styles.center}>Why Choose Codeocity?</h2>
@@ -49,12 +49,12 @@ const Mission = () => {
                                 school students
                             </li>
                             <li className={styles.item}>
-                                Our curriculum is structured around having learn
-                                by building
+                                Our curriculum is structured around having
+                                students learn by building
                             </li>
                             <li className={styles.item}>
-                                We help them learn how to do their own research
-                                with online resources
+                                We help students learn how to do their own
+                                research with online resources
                             </li>
                             <li className={styles.item}>
                                 Fully virtual classes to allow for flexibility
