@@ -120,7 +120,7 @@ const CourseInfo = [
             "Responsive layout/media queries",
         ],
         image: advancedCSS,
-        times: ["Tuesday, Friday : 7-8pm EDT"],
+        times: ["Tuesday, Thursday : 4-5pm EDT"],
         video: "",
         teachers: checker("Advanced CSS"),
         madeFor: "middle schoolers",
