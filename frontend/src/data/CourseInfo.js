@@ -23,7 +23,7 @@ const CourseInfo = [
     ],
     image: scratch,
     video: "https://www.youtube.com/embed/ulAiiCDtp5U",
-    times: ["Tuesday 5-6pm, Saturday 11-12am EDT"],
+    times: ["Wednesday 5-6pm, Saturday 11-12am EDT"],
     teachers: checker("Scratch"),
     madeFor: "elementary schoolers",
     startsOn: "September 19th",
