@@ -30,22 +30,6 @@ const employees = [
       "I am a junior at Walt Whitman Highschool. I have been coding for about four years. I started with learning HTML and CSS and then later learned JavaScript to make content dynamic on my websites!",
     image: colin,
   },
-  {
-    id: 5,
-    name: "Sam Collier",
-    roles: ["DOM Manipulation"],
-    description:
-      "I am a 15 year old programmer who knows HTML, CSS, and JS, along with a bit of Java and C. I enjoy web development, programming games, and the liberal arts!",
-    image: scollier,
-  },
-  {
-    id: 5,
-    name: "Sophie Hansen",
-    roles: ["Scratch"],
-    description:
-      "I am a junior at Montgomery Blair High School who has been coding for about 4 years. Through school and at-home projects, I have learned Python, HTML, Java, and some JavaScript. Outside of school, I enjoy photography, art, and listening to music!",
-    image: sophie,
-  },
 ];
 
 export default employees;

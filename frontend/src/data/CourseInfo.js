@@ -26,7 +26,7 @@ const CourseInfo = [
     times: ["Wednesday 5-6pm, Saturday 11-12am EDT"],
     teachers: checker("Scratch"),
     madeFor: "elementary schoolers",
-    startsOn: "November 28th",
+    startsOn: "December 5th",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const CourseInfo = [
     times: ["Monday, Thursday : 7-8pm EDT"],
     teachers: checker("Web Dev 1"),
     madeFor: "middle schoolers",
-    startsOn: "November 28th",
+    startsOn: "December 5th",
   },
   {
     id: 3,
@@ -83,7 +83,7 @@ const CourseInfo = [
     video: "https://www.youtube.com/embed/e0-IRuJzqi0",
     teachers: checker("Intro to JavaScript"),
     madeFor: "middle schoolers",
-    startsOn: "November 7th",
+    startsOn: "December 5th",
   },
   {
     id: 4,
@@ -103,7 +103,7 @@ const CourseInfo = [
     video: "https://www.youtube.com/embed/n7zQiipRY70",
     teachers: checker("DOM Manipulation"),
     madeFor: "middle schoolers",
-    startsOn: "November 7th",
+    startsOn: "December 5th",
   },
 
   {
@@ -124,7 +124,7 @@ const CourseInfo = [
     video: "",
     teachers: checker("Advanced CSS"),
     madeFor: "middle schoolers",
-    startsOn: "November 7th",
+    startsOn: "December 5th",
   },
 ];
 
