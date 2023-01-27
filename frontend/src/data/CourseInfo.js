@@ -23,10 +23,10 @@ const CourseInfo = [
         ],
         image: scratch,
         video: "https://www.youtube.com/embed/ulAiiCDtp5U",
-        times: ["Wednesday 5-6pm, Saturday 11-12am EDT"],
+        times: ["TBD"],
         teachers: checker("Scratch"),
         madeFor: "elementary schoolers",
-        startsOn: "December 12th",
+        startsOn: "TBD",
     },
     {
         id: 2,
@@ -55,7 +55,7 @@ const CourseInfo = [
         times: ["Tuesday, Thursday : 7-8pm EDT"],
         teachers: checker("Web Dev 1"),
         madeFor: "middle schoolers",
-        startsOn: "December 12th",
+        startsOn: "February 6th",
     },
     {
         id: 3,
@@ -79,11 +79,11 @@ const CourseInfo = [
             "What objects are and how to use them",
         ],
         image: javascript,
-        times: ["Monday, Wednesday : 7-8pm EDT"],
+        times: ["TBD"],
         video: "https://www.youtube.com/embed/e0-IRuJzqi0",
         teachers: checker("Intro to JavaScript"),
         madeFor: "middle schoolers",
-        startsOn: "December 12th",
+        startsOn: "TBD",
     },
     {
         id: 4,
@@ -99,11 +99,11 @@ const CourseInfo = [
             "How to use event listeners",
         ],
         image: dom,
-        times: ["Monday, Wednesday : 7-8pm EDT"],
+        times: ["TBD"],
         video: "https://www.youtube.com/embed/n7zQiipRY70",
         teachers: checker("DOM Manipulation"),
         madeFor: "middle schoolers",
-        startsOn: "December 12th",
+        startsOn: "TBD",
     },
 
     {
@@ -124,7 +124,7 @@ const CourseInfo = [
         video: "",
         teachers: checker("Advanced CSS"),
         madeFor: "middle schoolers",
-        startsOn: "December 12th",
+        startsOn: "February 6th",
     },
 ];
 
