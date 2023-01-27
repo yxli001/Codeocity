@@ -109,8 +109,8 @@ const CourseInfo = [
   {
     id: 5,
     title: "Advanced CSS",
-    price: 200,
-    numClasses: 8,
+    price: 250,
+    numClasses: 10,
     description:
       "This course teaches students to create advanced layouts on their websites using technologies such as flexbox, grid, and media queries in CSS. ",
     content: [
