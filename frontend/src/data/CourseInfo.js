@@ -60,8 +60,8 @@ const CourseInfo = [
   {
     id: 3,
     title: "Intro to JavaScript",
-    price: 200,
-    numClasses: 8,
+    price: 250,
+    numClasses: 10,
     description:
       "In our Intro to JavaScript course, students will learn the basics of JavaScript syntax. Having experience with HTML or Java is required before beginning this course. It is highly recommended to take Web Dev 1 for those who have no experience.",
     content: [
